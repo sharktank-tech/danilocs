@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danilo Cavalcante Silva - Portfólio</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <h1>Danilo Cavalcante Silva</h1>
+        <p>Desenvolvedor Web / Back-End</p>
+    </header>
+
+    <section id="home">
+        <h2>Sobre Mim</h2>
+        <p>Olá! Me chamo Danilo, sou estudante de programação apaixonado por tecnologia. Estou em constante busca por conhecimento e adoro explorar novas áreas dentro da programação.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projetos Recentes</h2>
+        <div class="project">
+            <h3>Landing Page</h3>
+            <p>Landing page simples, intuitiva e eficaz para os serviços de frete local. A página tem como principal objetivo fornecer informações essenciais sobre o serviço, como localização, horário de atendimento, e facilitar o contato com o cliente através de um botão que direcionará diretamente para o WhatsApp do prestador de serviç</p>
+        </div>
+        <div class="project">
+            <h3>Projeto 2</h3>
+            <p>Descrição do Projeto 2.</p>
+        </div>
+        <div class="project">
+            <h3>Projeto 3</h3>
+            <p>Descrição do Projeto 3.</p>
+        </div>
+    </section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form" method="POST" action="/send-email">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+
+</body>
+</html>
