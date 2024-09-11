@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f51323b-5920-4b50-b66c-7954ebd0e7a3" name="Changes" comment="add requirements.txt" />
+    <list default="true" id="6f51323b-5920-4b50-b66c-7954ebd0e7a3" name="Changes" comment="add vercel.json" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726095433756</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add vercel.json">
+      <option name="closed" value="true" />
+      <created>1726097848851</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726097848851</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,6 +144,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="atualização" />
     <MESSAGE value="add requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="add requirements.txt" />
+    <MESSAGE value="add vercel.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="add vercel.json" />
   </component>
 </project>
