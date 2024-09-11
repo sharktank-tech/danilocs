@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f51323b-5920-4b50-b66c-7954ebd0e7a3" name="Changes" comment="atualização" />
+    <list default="true" id="6f51323b-5920-4b50-b66c-7954ebd0e7a3" name="Changes" comment="add requirements.txt" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,12 +27,12 @@
     &quot;assignee&quot;: &quot;sharktank-tech&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/sharktank-tech/Ponto-eletronico&quot;,
-    &quot;accountId&quot;: &quot;51b8bfda-aca4-4b1b-ba06-db6e3d3e7291&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/sharktank-tech/danilocs",
+    "accountId": "51b8bfda-aca4-4b1b-ba06-db6e3d3e7291"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -111,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726091533104</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add requirements.txt">
+      <option name="closed" value="true" />
+      <created>1726095433756</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726095433756</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +135,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="atualização" />
-    <option name="LAST_COMMIT_MESSAGE" value="atualização" />
+    <MESSAGE value="add requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="add requirements.txt" />
   </component>
 </project>
