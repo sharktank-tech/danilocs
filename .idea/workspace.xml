@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f51323b-5920-4b50-b66c-7954ebd0e7a3" name="Changes" comment="recolocação requirements.txt" />
+    <list default="true" id="6f51323b-5920-4b50-b66c-7954ebd0e7a3" name="Changes" comment="recolocação 2 requirements.txt">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,12 +29,12 @@
     &quot;assignee&quot;: &quot;sharktank-tech&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/sharktank-tech/danilocs",
-    "accountId": "51b8bfda-aca4-4b1b-ba06-db6e3d3e7291"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sharktank-tech/danilocs&quot;,
+    &quot;accountId&quot;: &quot;51b8bfda-aca4-4b1b-ba06-db6e3d3e7291&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -181,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726101347272</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="recolocação 2 requirements.txt">
+      <option name="closed" value="true" />
+      <created>1726101802906</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1726101802906</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,6 +212,7 @@
     <MESSAGE value="atualização vercel.json" />
     <MESSAGE value="atualização estrutura vercel.json" />
     <MESSAGE value="recolocação requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="recolocação requirements.txt" />
+    <MESSAGE value="recolocação 2 requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="recolocação 2 requirements.txt" />
   </component>
 </project>
