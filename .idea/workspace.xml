@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f51323b-5920-4b50-b66c-7954ebd0e7a3" name="Changes" comment="atualização vercel.json">
-      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/api/static/css/styles.css" afterDir="false" />
-    </list>
+    <list default="true" id="6f51323b-5920-4b50-b66c-7954ebd0e7a3" name="Changes" comment="recolocação requirements.txt" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +50,12 @@
     &quot;last_opened_file_path&quot;: &quot;/home/danilo/PycharmProjects/PontoEletronico&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/api" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="danilocs" />
@@ -145,7 +149,31 @@
       <option name="project" value="LOCAL" />
       <updated>1726100696072</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="atualização estrutura vercel.json">
+      <option name="closed" value="true" />
+      <created>1726100907040</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1726100907040</updated>
+    </task>
+    <task id="LOCAL-00008" summary="atualização estrutura vercel.json">
+      <option name="closed" value="true" />
+      <created>1726100937581</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1726100937581</updated>
+    </task>
+    <task id="LOCAL-00009" summary="recolocação requirements.txt">
+      <option name="closed" value="true" />
+      <created>1726101044173</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1726101044173</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,6 +192,8 @@
     <MESSAGE value="add requirements.txt" />
     <MESSAGE value="add vercel.json" />
     <MESSAGE value="atualização vercel.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="atualização vercel.json" />
+    <MESSAGE value="atualização estrutura vercel.json" />
+    <MESSAGE value="recolocação requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="recolocação requirements.txt" />
   </component>
 </project>
