@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f51323b-5920-4b50-b66c-7954ebd0e7a3" name="Changes" comment="update 3">
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="6f51323b-5920-4b50-b66c-7954ebd0e7a3" name="Changes" comment="update 6">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,7 +313,31 @@
       <option name="project" value="LOCAL" />
       <updated>1726165600961</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="update 4">
+      <option name="closed" value="true" />
+      <created>1726165696870</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1726165696870</updated>
+    </task>
+    <task id="LOCAL-00028" summary="update 5">
+      <option name="closed" value="true" />
+      <created>1726165782373</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1726165782373</updated>
+    </task>
+    <task id="LOCAL-00029" summary="update 6">
+      <option name="closed" value="true" />
+      <created>1726165961314</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1726165961314</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -340,6 +364,9 @@
     <MESSAGE value="update" />
     <MESSAGE value="update 2" />
     <MESSAGE value="update 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 3" />
+    <MESSAGE value="update 4" />
+    <MESSAGE value="update 5" />
+    <MESSAGE value="update 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 6" />
   </component>
 </project>
