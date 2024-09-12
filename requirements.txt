@@ -70,7 +70,6 @@ click-didyoumean==0.3.0
 click-plugins==1.1.1
 click-repl==0.3.0
 cloudpathlib==0.18.1
-cmd2==2.4.3+ds
 colorama==0.4.6
 confection==0.1.5
 configobj==5.0.8
