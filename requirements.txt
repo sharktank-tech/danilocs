@@ -42,7 +42,6 @@ pypdf==4.2.0
 pyperclip==1.8.2
 pypng==0.20231004.0
 pypsrp==0.8.1
-pypykatz==0.6.6
 PyQRCode==1.2.1
 PyQt5==5.15.10
 PyQt5-sip==12.13.0
@@ -107,9 +106,6 @@ smmap==6.0.0
 sniffio==1.3.0
 sortedcontainers==2.4.0
 soupsieve==2.5
-spacy==3.7.5
-spacy-legacy==3.0.12
-spacy-loggers==1.0.5
 SpeechRecognition==3.10.4
 spinners==0.0.24
 SQLAlchemy==2.0.31
