@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f51323b-5920-4b50-b66c-7954ebd0e7a3" name="Changes" comment="recolocação 2 requirements.txt">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6f51323b-5920-4b50-b66c-7954ebd0e7a3" name="Changes" comment="atualização do requirements.txt removido binwalk" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +57,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="danilocs" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -72,7 +70,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -83,7 +81,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
+        <item itemvalue="Python.app" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +189,39 @@
       <option name="project" value="LOCAL" />
       <updated>1726101802906</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="mudanças do servidor do de teste Flask par ao Gunicorn">
+      <option name="closed" value="true" />
+      <created>1726162003046</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1726162003046</updated>
+    </task>
+    <task id="LOCAL-00013" summary="mudanças do servidor do de teste Flask par ao Gunicorn">
+      <option name="closed" value="true" />
+      <created>1726162290617</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1726162290618</updated>
+    </task>
+    <task id="LOCAL-00014" summary="atualização do requirements.txt">
+      <option name="closed" value="true" />
+      <created>1726162315644</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1726162315644</updated>
+    </task>
+    <task id="LOCAL-00015" summary="atualização do requirements.txt">
+      <option name="closed" value="true" />
+      <created>1726162714472</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1726162714472</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,6 +243,8 @@
     <MESSAGE value="atualização estrutura vercel.json" />
     <MESSAGE value="recolocação requirements.txt" />
     <MESSAGE value="recolocação 2 requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="recolocação 2 requirements.txt" />
+    <MESSAGE value="mudanças do servidor do de teste Flask par ao Gunicorn" />
+    <MESSAGE value="atualização do requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="atualização do requirements.txt" />
   </component>
 </project>
