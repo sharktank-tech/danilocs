@@ -1,17 +1,4 @@
-python-apt==2.9.0
-python-dateutil==2.9.0
-python-docx==1.1.0
-python-dotenv==1.0.1
-python-engineio==4.9.0
-python-gnupg==0.5.2
-python-gvm==24.3.0
-python-jose==3.3.0
-python-magic==0.4.27
-python-memcached==1.60
-python-multipart==0.0.9
-python-owasp-zap-v2.4==0.0.20
-python-pptx==0.6.18
-python-slugify==8.0.4
-python-snappy==0.5.3
-python-socketio==5.11.2
-python-status==1.0.1
+Python==3.11.9
+Flask==3.0.0
+Werkzeug==3.0.3
+gunicorn== 21.2.0
