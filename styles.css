@@ -152,6 +152,7 @@ contact-links a.linkedin:hover {
     }
 
     nav ul {
+        padding: 10px;
         flex-direction: row; /* Mantém os links alinhados horizontalmente */
     }
 
