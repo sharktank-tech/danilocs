@@ -23,7 +23,6 @@ header {
 }
 
 header h1 {
-    margin-bottom: 10px;
     font-size: 2.5rem;
 }
 
@@ -36,11 +35,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
-}
-
-nav ul li {
-    margin: 0 15px;
+    gap: 30px;
 }
 
 nav ul li a {
@@ -59,9 +54,9 @@ section {
     text-align: center;
 }
 
+/* Sobre Mim */
 #home {
     background-color: #e9e9e9;
-    padding: 60px 20px;
     border-radius: 8px;
 }
 
@@ -71,23 +66,16 @@ section {
     color: #333;
 }
 
-#home p {
-    font-size: 1.1rem;
-    color: #555;
-}
-
 /* Projetos */
 #projects {
     background-color: #fff;
     border-radius: 8px;
-    padding: 60px 20px;
     margin-top: 40px;
 }
 
 #projects h2 {
     margin-bottom: 40px;
     font-size: 2rem;
-    color: #333;
 }
 
 .project {
@@ -100,88 +88,20 @@ section {
 .project h3 {
     margin-bottom: 10px;
     font-size: 1.5rem;
-    color: #333;
-}
-
-.project p {
-    color: #555;
-}
-
-/* Formulário de Contato */
-.contact {
-    background-color: #e9e9e9;
-    border-radius: 8px;
-    padding: 60px 20px;
-    margin-top: 40px;
-}
-
-.contact h2 {
-    margin-bottom: 20px;
-    font-size: 2rem;
-    color: #333;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-form label {
-    align-self: flex-start;
-    font-size: 1rem;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
-    background-color: #fff;
-}
-
-form button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 12px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #ffa500;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
     }
 
     header h1 {
         font-size: 2rem;
     }
 
-    #home h2, #projects h2, .contact h2 {
+    #home h2, #projects h2 {
         font-size: 1.75rem;
-    }
-
-    form {
-        width: 100%;
     }
 }
 
@@ -194,7 +114,7 @@ form button:hover {
         font-size: 1.75rem;
     }
 
-    #home h2, #projects h2, .contact h2 {
+    #home h2, #projects h2 {
         font-size: 1.5rem;
     }
 }
