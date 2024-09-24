@@ -149,11 +149,14 @@ contact-links a.linkedin:hover {
 /* Responsividade */
 @media (max-width: 768px) {
 
+    .contact-links a {
+        font-size: 0.9rem; /* Diminui o tamanho da fonte dos links */
+        margin: 2px; /* Diminui o espaçamento entre os links */
+    }
 
     .contact-links {
         flex-direction: row;
     }
-
 
     nav ul {
         padding: 5px;
