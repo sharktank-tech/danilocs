@@ -9,7 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #8a90b3;
+    background-color: #9e9696;
     color: #333;
     padding: 0 20px;
 }
@@ -69,7 +69,7 @@ section {
 
 /* Projetos */
 #projects {
-    background-color: #9e9696;
+    background-color: #8a90b3;
     border-radius: 8px;
     margin-top: 40px;
 }
