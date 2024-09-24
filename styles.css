@@ -149,10 +149,11 @@ contact-links a.linkedin:hover {
 @media (max-width: 768px) {
     .contact-links {
         flex-direction: row;
+        padding: 5px;
     }
 
     nav ul {
-        padding: 10px;
+        padding: 5px;
         flex-direction: row; /* Mantém os links alinhados horizontalmente */
     }
 
