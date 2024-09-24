@@ -36,6 +36,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap; /* Permite que os itens quebrem de linha se necessário */
 }
 
 nav ul li a {
@@ -93,7 +94,7 @@ section {
 /* Responsividade */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
+        flex-direction: row; /* Mantém os links alinhados horizontalmente */
     }
 
     header h1 {
