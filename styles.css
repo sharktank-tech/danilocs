@@ -177,9 +177,7 @@ contact-links a.linkedin:hover {
         font-size: 1.5rem;
     }
 
-    .contact-links {
-        flex-direction: column; /* Links de contato alinhados verticalmente em telas muito pequenas */
-    }
+ 
 
     .contact-links a {
         width: 100%;
