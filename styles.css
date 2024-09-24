@@ -36,7 +36,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap; /* Permite que os itens quebrem de linha se necessário */
+    flex-wrap: wrap;
 }
 
 nav ul li a {
@@ -122,27 +122,27 @@ section {
 
 /* Cores específicas dos links */
 .contact-links a.whatsapp {
-    background-color: #25D366; /* Cor do WhatsApp */
+    background-color: #128C7E; /* Cor correta do WhatsApp */
 }
 
 .contact-links a.whatsapp:hover {
-    background-color: #1ebf5b; /* Cor mais escura ao hover */
+    background-color: #075E54; /* Cor mais escura ao hover */
 }
 
 .contact-links a.linkedin {
-    background-color: #0A66C2; /* Cor do LinkedIn */
+    background-color: #0077B5; /* Cor correta do LinkedIn */
 }
 
-.contact-links a.linkedin:hover {
-    background-color: #084a96; /* Cor mais escura ao hover */
+contact-links a.linkedin:hover {
+    background-color: #005582; /* Cor mais escura ao hover */
 }
 
 .contact-links a.github {
-    background-color: #333; /* Cor do GitHub */
+    background-color: #181717; /* Cor correta do GitHub */
 }
 
 .contact-links a.github:hover {
-    background-color: #24292e; /* Cor mais escura ao hover */
+    background-color: #0d0d0d; /* Cor mais escura ao hover */
 }
 
 /* Responsividade */
