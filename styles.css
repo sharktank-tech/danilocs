@@ -5,14 +5,15 @@
     box-sizing: border-box;
 }
 
-/* Estilos gerais */
+/* Estilo para o fundo da página */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #9e9696;
-    color: #333;
-    padding: 0 20px;
+    background-image: url('background.jpg');
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    color: #333; /* Mantém a cor do texto */
 }
+
 
 /* Header e Navegação */
 header {
