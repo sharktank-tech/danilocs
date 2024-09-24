@@ -152,11 +152,11 @@ contact-links a.linkedin:hover {
     }
 
     .contact-links {
-        padding: 5px;
+        padding: 3px;
     }
 
     nav ul {
-        padding: 3px;
+        padding: 5px;
         flex-direction: row; /* Mantém os links alinhados horizontalmente */
     }
 
