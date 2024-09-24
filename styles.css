@@ -185,10 +185,12 @@ contact-links a.linkedin:hover {
         font-size: 1.5rem;
     }
 
- 
-    .contact-links a {
-        font-size: 0.9rem; /* Diminui o tamanho da fonte dos links */
-        margin: 2px; /* Diminui o espaçamento entre os links */
+    .contact-links {
+        gap: 10px; /* Diminui o espaçamento horizontal entre os links */
     }
 
+    .contact-links a {
+        font-size: 0.9rem; /* Diminui o tamanho da fonte dos links */
+        padding: 8px 15px; /* Ajusta o padding */
+    }
 }
