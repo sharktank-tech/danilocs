@@ -122,15 +122,15 @@ section {
 
 /* Cores específicas dos links */
 .contact-links a.whatsapp {
-    background-color: #128C7E; /* Cor correta do WhatsApp */
+    background-color: #27ce18; /* Cor correta do WhatsApp */
 }
 
 .contact-links a.whatsapp:hover {
-    background-color: #075E54; /* Cor mais escura ao hover */
+    background-color: #0d6b21; /* Cor mais escura ao hover */
 }
 
 .contact-links a.linkedin {
-    background-color: #0077B5; /* Cor correta do LinkedIn */
+    background-color: #4297db; /* Cor correta do LinkedIn */
 }
 
 contact-links a.linkedin:hover {
