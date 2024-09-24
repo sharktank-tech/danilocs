@@ -149,6 +149,9 @@ contact-links a.linkedin:hover {
 @media (max-width: 768px) {
     .contact-links {
         flex-direction: row;
+    }
+
+    .contact-links {
         padding: 5px;
     }
 
