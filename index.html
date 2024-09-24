@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danilo Cavalcante Silva - Portfólio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="slides.css">
     <link rel="shortcut icon" href="favicon.png">
 </head> 
 <body>
@@ -27,18 +28,52 @@
 
     <section id="projects">
         <h2>Projetos Recentes</h2>
+
+        <!-- Primeiro Projeto com Slides -->
         <div class="project">
             <h3>Landing Page</h3>
-            <p>Landing page simples, intuitiva e eficaz para os serviços de frete local. A página tem como principal objetivo fornecer informações essenciais sobre o serviço, como localização, horário de atendimento, e facilitar o contato com o cliente através de um botão que direcionará diretamente para o WhatsApp do prestador de serviço.</p>
+            <div class="slider-container">
+                <div class="slides">
+                    <img src="projeto1-slide1.jpg" alt="Slide 1 do Projeto Landing Page">
+                    <img src="projeto1-slide2.jpg" alt="Slide 2 do Projeto Landing Page">
+                    <img src="projeto1-slide3.jpg" alt="Slide 3 do Projeto Landing Page">
+                </div>
+                <button class="prev" onclick="moveSlide(-1, 0)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1, 0)">&#10095;</button>
+            </div>
+            <p>Landing page simples, intuitiva e eficaz para os serviços de frete local...</p>
         </div>
+
+        <!-- Segundo Projeto com Slides -->
         <div class="project">
             <h3>Eponto</h3>
-            <p>Projeto próprio de uma aplicação desenvolvida para gerenciamento da marcação de ponto eletrônico Funcionalidades: - Registro de novos usuários - Banco de dado dos usuários - Banco de dados das informações das marcações - Área de conta com informações sobre salario e carga horaria - Envio de email com relatório Tecnologias usadas: - Python-Flask - SQL - HTML&CSS - Tailwind-CSS - Java Script</p>
+            <div class="slider-container">
+                <div class="slides">
+                    <img src="projeto2-slide1.jpg" alt="Slide 1 do Projeto Eponto">
+                    <img src="projeto2-slide2.jpg" alt="Slide 2 do Projeto Eponto">
+                    <img src="projeto2-slide3.jpg" alt="Slide 3 do Projeto Eponto">
+                </div>
+                <button class="prev" onclick="moveSlide(-1, 1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1, 1)">&#10095;</button>
+            </div>
+            <p>Projeto próprio de uma aplicação desenvolvida para gerenciamento da marcação de ponto eletrônico...</p>
         </div>
+
+        <!-- Terceiro Projeto com Slides -->
         <div class="project">
-            <h3>Sistema de gerenciamnento de tarefas</h3>
-            <p>Este é um projeto de gerenciamento de tarefas que permite adicionar, editar, excluir e visualizar tarefas. O projeto também inclui a funcionalidade de enviar um relatório por e-mail. Tecnologias usadas: - Pytohn-Flask - SQl - HTML&CSS - Java Script</p>
+            <h3>Sistema de gerenciamento de tarefas</h3>
+            <div class="slider-container">
+                <div class="slides">
+                    <img src="projeto3-slide1.jpg" alt="Slide 1 do Projeto Tarefas">
+                    <img src="projeto3-slide2.jpg" alt="Slide 2 do Projeto Tarefas">
+                    <img src="projeto3-slide3.jpg" alt="Slide 3 do Projeto Tarefas">
+                </div>
+                <button class="prev" onclick="moveSlide(-1, 2)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1, 2)">&#10095;</button>
+            </div>
+            <p>Este é um projeto de gerenciamento de tarefas que permite adicionar, editar, excluir...</p>
         </div>
+
     </section>
 
     <!-- Seção de Contato -->
@@ -51,6 +86,8 @@
             <a class="github" href="https://github.com/sharktank-tech" target="_blank">GitHub</a>
         </div>
     </section>
+
+    <script src="scripts.js"></script>
 
 </body>
 </html>
