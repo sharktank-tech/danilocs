@@ -148,13 +148,12 @@ contact-links a.linkedin:hover {
 
 /* Responsividade */
 @media (max-width: 768px) {
+
+
     .contact-links {
         flex-direction: row;
     }
 
-    .contact {
-        padding: 3px;
-    }
 
     nav ul {
         padding: 5px;
