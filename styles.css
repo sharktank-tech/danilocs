@@ -184,10 +184,13 @@ contact-links a.linkedin:hover {
     }
 
  
+    .contact-links a {
+        font-size: 0.9rem; /* Diminui o tamanho da fonte dos links */
+        margin: 5px; /* Diminui o espaçamento entre os links */
+    }
 
     .contact-links a {
         width: 100%;
         max-width: 250px;
-        margin: 0 auto;
     }
 }
