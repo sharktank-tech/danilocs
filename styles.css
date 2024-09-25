@@ -13,6 +13,7 @@ body {
     background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     color: #333;
+    line-height: 1.6;
 }
 
 /* Header e Navegação */
@@ -73,6 +74,13 @@ section h2 {
     background-color: rgba(233, 233, 233, 0.9);
     border-radius: 8px;
     padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#home p {
+    font-size: 1.2rem;
+    color: #444;
 }
 
 /* Projetos */
@@ -98,4 +106,105 @@ section h2 {
 .project-header h3 {
     font-size: 2rem;
     color: #555;
+}
+
+.project-description {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.project-description p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #696DED;
+    color: white;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ffa500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-links a:hover {
+    background-color: #ff7800;
+}
+
+/* Ajustes de layout para diferentes tamanhos de tela */
+
+/* Ajustes para computadores (largura mínima de 1024px) */
+@media (min-width: 1024px) {
+    .project-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .project-description {
+        width: 60%;
+    }
+
+    .slider-container {
+        width: 35%;
+    }
+}
+
+/* Ajustes para laptops e tablets (largura mínima de 768px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .project-content {
+        flex-direction: row;
+    }
+
+    .project-description {
+        width: 50%;
+    }
+
+    .slider-container {
+        width: 45%;
+    }
+}
+
+/* Ajustes para mobile (largura máxima de 768px) */
+@media (max-width: 768px) {
+    .project-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .project-description {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
 }
