@@ -14,8 +14,8 @@
 
 .slides img {
     width: 100%; /* Mantém a largura total do slide */
-    height: 300px; /* Define uma altura fixa para todas as imagens */
-    object-fit: cover; /* Faz com que a imagem preencha o espaço do slide sem distorção */
+    height: auto; /* Permite que a altura se ajuste conforme a proporção da imagem */
+    object-fit: contain; /* Ajusta a imagem ao container sem distorção nem corte */
 }
 
 /* Para garantir que apenas um slide seja mostrado por vez */
@@ -46,4 +46,15 @@
 
 .next {
     right: 10px;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 640px) {
+    .slides img {
+        height: auto; /* Remove a altura fixa e permite que as imagens se ajustem proporcionalmente */
+    }
+
+    .prev, .next {
+        padding: 8px; /* Botões menores em dispositivos móveis */
+    }
 }
