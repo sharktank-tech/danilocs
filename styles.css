@@ -11,8 +11,9 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: #333;
 }
-
 
 /* Header e Navegação */
 header {
@@ -24,11 +25,13 @@ header {
 
 header h1 {
     font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
 header p {
     font-size: 1.2rem;
     color: #ddd;
+    margin-bottom: 20px;
 }
 
 nav ul {
@@ -37,16 +40,20 @@ nav ul {
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+    padding-bottom: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ffa500;
+    background-color: #ffa500;
 }
 
 /* Seções */
@@ -55,28 +62,25 @@ section {
     text-align: center;
 }
 
-/* Sobre Mim */
-#home {
-    background-color: #e9e9e9;
-    border-radius: 8px;
-}
-
-#home h2 {
+section h2 {
     margin-bottom: 20px;
     font-size: 2rem;
     color: #333;
 }
 
-/* Projetos */
-#projects {
-    background-color: #dfdfdf;
+/* Sobre Mim */
+#home {
+    background-color: rgba(233, 233, 233, 0.9);
     border-radius: 8px;
-    margin-top: 40px;
+    padding: 40px;
 }
 
-#projects h2 {
-    margin-bottom: 40px;
-    font-size: 2rem;
+/* Projetos */
+#projects {
+    background-color: rgba(223, 223, 223, 0.9);
+    border-radius: 8px;
+    margin-top: 40px;
+    padding: 40px;
 }
 
 .project {
@@ -88,15 +92,16 @@ section {
 
 .project h3 {
     margin-bottom: 10px;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    color: #555;
 }
 
 /* Contato */
 #contact {
-    background-color: #f0f0f0;
+    background-color: rgba(240, 240, 240, 0.9);
     border-radius: 8px;
     margin-top: 40px;
-    padding: 40px 0;
+    padding: 40px;
 }
 
 #contact h2 {
@@ -118,60 +123,64 @@ section {
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    font-size: 1rem;
 }
 
 /* Cores específicas dos links */
 .contact-links a.whatsapp {
-    background-color: #27ce18; /* Cor correta do WhatsApp */
+    background-color: #27ce18;
 }
 
 .contact-links a.whatsapp:hover {
-    background-color: #0d6b21; /* Cor mais escura ao hover */
+    background-color: #0d6b21;
 }
 
 .contact-links a.linkedin {
-    background-color: #4297db; /* Cor correta do LinkedIn */
+    background-color: #4297db;
 }
 
-contact-links a.linkedin:hover {
-    background-color: #005582; /* Cor mais escura ao hover */
+.contact-links a.linkedin:hover {
+    background-color: #005582;
 }
 
 .contact-links a.github {
-    background-color: #181717; /* Cor correta do GitHub */
+    background-color: #181717;
 }
 
 .contact-links a.github:hover {
-    background-color: #0d0d0d; /* Cor mais escura ao hover */
+    background-color: #0d0d0d;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
 
-    .contact-links a {
-        font-size: 0.9rem; /* Diminui o tamanho da fonte dos links */
-        margin: 2px; /* Diminui o espaçamento entre os links */
-    }
-
-    .contact-links {
-        flex-direction: row;
-    }
-
     nav ul {
+        gap: 20px;
         padding: 5px;
-        flex-direction: row; /* Mantém os links alinhados horizontalmente */
+        flex-direction: row;
     }
 
     header h1 {
         font-size: 2rem;
     }
 
-    #home h2, #projects h2, #contact h2 {
+    section h2 {
         font-size: 1.75rem;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-links a {
+        font-size: 0.9rem;
+        padding: 8px 15px;
     }
 }
 
 @media (max-width: 480px) {
+
     body {
         padding: 0 10px;
     }
@@ -180,16 +189,16 @@ contact-links a.linkedin:hover {
         font-size: 1.75rem;
     }
 
-    #home h2, #projects h2, #contact h2 {
+    section h2 {
         font-size: 1.5rem;
     }
 
     .contact-links {
-        gap: 10px; /* Diminui o espaçamento horizontal entre os links */
+        gap: 10px;
     }
 
     .contact-links a {
-        font-size: 0.9rem; /* Diminui o tamanho da fonte dos links */
-        padding: 8px 15px; /* Ajusta o padding */
+        font-size: 0.85rem;
+        padding: 8px 12px;
     }
 }

@@ -1,11 +1,11 @@
-/* Estilos básicos... */
-
+/* Estilos básicos para o slider */
 .slider-container {
     position: relative;
     max-width: 100%;
     margin: 20px auto;
     overflow: hidden;
     border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .slides {
@@ -16,6 +16,7 @@
 .slides img {
     width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
 .prev, .next {
@@ -28,6 +29,11 @@
     padding: 10px;
     cursor: pointer;
     border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .prev {
@@ -40,11 +46,16 @@
 
 /* Ajustes para mobile */
 @media (max-width: 768px) {
+
     .slides img {
         width: 100%;
     }
 
     .prev, .next {
         padding: 5px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.7);
     }
 }
