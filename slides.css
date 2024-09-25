@@ -7,11 +7,13 @@
     border-radius: 8px;
 }
 
+/* Contêiner de slides */
 .slides {
     display: flex;
     transition: transform 0.5s ease;
 }
 
+/* Imagens dentro dos slides */
 .slides img {
     width: 100%; /* Valor padrão para telas pequenas */
     height: auto;
@@ -28,6 +30,7 @@
     padding: 10px;
     cursor: pointer;
     border-radius: 50%;
+    z-index: 10; /* Garante que os botões fiquem acima do conteúdo */
 }
 
 .prev {
