@@ -136,24 +136,46 @@ footer p {
     color: #ddd;
 }
 
-.contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
+/* Estilo geral para os links de contato */
 .contact-links a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #ffa500;
+    display: inline-block;
     padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
     border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
-.contact-links a:hover {
-    background-color: #ff7800;
+/* WhatsApp */
+.contact-links a.whatsapp {
+    background-color: #25D366;
 }
+
+.contact-links a.whatsapp:hover {
+    background-color: #1EBB57;
+}
+
+/* LinkedIn */
+.contact-links a.linkedin {
+    background-color: #0077B5;
+}
+
+.contact-links a.linkedin:hover {
+    background-color: #005E92;
+}
+
+/* GitHub */
+.contact-links a.github {
+    background-color: #333;
+}
+
+.contact-links a.github:hover {
+    background-color: #222;
+}
+
 
 /* Ajustes de layout para diferentes tamanhos de tela */
 

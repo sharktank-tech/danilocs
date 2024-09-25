@@ -9,7 +9,9 @@ function moveSlide(n, projectIndex) {
 
     // Aplica a transformação de posição do container de slides
     slidesContainer.style.transform = `translateX(-${slideIndex[projectIndex] * 100}%)`;
-
-    // Adiciona uma transição suave para o movimento dos slides
-    slidesContainer.style.transition = 'transform 0.5s ease-in-out';
 }
+
+// Garante que a transição seja sempre suave para todos os containers de slides
+document.querySelectorAll('.slides').forEach(slidesContainer => {
+    slidesContainer.style.transition = 'transform 0.5s ease-in-out';
+});
