@@ -10,6 +10,7 @@
 </head>
 <body class="bg-cover bg-center" style="background-image: url('background.jpg');">
 
+    <!-- Header -->
     <header class="text-center bg-indigo-600 text-white py-10">
         <nav class="mb-5">
             <ul class="flex justify-center space-x-6 text-lg">
@@ -22,11 +23,12 @@
         <p class="text-xl text-gray-200">Desenvolvedor Web / Back-End</p>
     </header>
 
+    <!-- Main Content -->
     <main class="container mx-auto px-4 py-10">
         <!-- Seção Sobre Mim -->
         <section id="home" class="text-center bg-white bg-opacity-90 rounded-lg p-8 max-w-3xl mx-auto shadow-md">
             <h2 class="text-3xl font-semibold mb-6">Sobre Mim</h2>
-            <p class="text-lg text-gray-700">Olá! Me chamo Danilo, sou estudante de programação apaixonado por tecnologia...</p>
+            <p class="text-lg text-gray-700">Olá! Me chamo Danilo, sou estudante de programação apaixonado por tecnologia e focado em soluções Back-End. Meu objetivo é entregar sistemas eficientes e bem estruturados...</p>
         </section>
 
         <!-- Seção Projetos Recentes -->
@@ -39,26 +41,26 @@
                     <h3 class="text-2xl font-bold">Landing Page</h3>
                 </div>
                 <div class="flex flex-col md:flex-row justify-between items-center">
-                    <div class="slider-container mb-6 md:mb-0">
+                    <div class="slider-container mb-6 md:mb-0 relative w-full md:w-1/2">
                         <figure class="slides">
-                            <img src="slides/projeto1-slide1.jpg" alt="Slide 1 do Projeto Landing Page">
-                            <img src="slides/projeto1-slide2.jpg" alt="Slide 2 do Projeto Landing Page">
-                            <img src="slides/projeto1-slide1.jpg" alt="Slide 3 do Projeto Landing Page">
+                            <img src="slides/projeto1-slide1.jpg" alt="Slide 1 do Projeto Landing Page" class="w-full h-auto">
+                            <img src="slides/projeto1-slide2.jpg" alt="Slide 2 do Projeto Landing Page" class="w-full h-auto">
+                            <img src="slides/projeto1-slide3.jpg" alt="Slide 3 do Projeto Landing Page" class="w-full h-auto">
                         </figure>
-                        <button class="prev" onclick="moveSlide(-1, 0)">&#10094;</button>
-                        <button class="next" onclick="moveSlide(1, 0)">&#10095;</button>
+                        <button class="prev absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full" onclick="moveSlide(-1, 0)">&#10094;</button>
+                        <button class="next absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full" onclick="moveSlide(1, 0)">&#10095;</button>
                     </div>
-                    <div class="project-description max-w-lg text-left">
-                        <p class="text-lg">Landing page simples, intuitiva e eficaz para os serviços de frete local...</p>
+                    <div class="project-description max-w-lg text-left md:ml-8">
+                        <p class="text-lg text-gray-700">Landing page simples, intuitiva e eficaz para os serviços de frete local. O layout responsivo facilita a navegação e gera uma experiência agradável ao usuário final...</p>
                     </div>
                 </div>
             </article>
 
-            <!-- Mais projetos -->
+            <!-- Adicione mais projetos aqui -->
         </section>
     </main>
 
-    <!-- Seção de Contato -->
+    <!-- Footer / Seção de Contato -->
     <footer id="contact" class="bg-indigo-600 text-white text-center py-10">
         <h2 class="text-2xl mb-4">Contato</h2>
         <p class="mb-6">Entre em contato comigo através de uma das opções abaixo:</p>
@@ -69,6 +71,7 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="scripts.js"></script>
 </body>
 </html>

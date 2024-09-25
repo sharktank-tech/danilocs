@@ -18,6 +18,15 @@
     object-fit: cover; /* Faz com que a imagem preencha o espaço do slide sem distorção */
 }
 
+/* Para garantir que apenas um slide seja mostrado por vez */
+.slides img {
+    display: none; /* Esconde todas as imagens inicialmente */
+}
+
+.slides img.active {
+    display: block; /* Mostra apenas a imagem ativa */
+}
+
 /* Botões de navegação (próximo e anterior) */
 .prev, .next {
     position: absolute;
@@ -37,34 +46,4 @@
 
 .next {
     right: 10px;
-}
-
-/* Ajustes para computadores (largura mínima de 1024px) */
-@media (min-width: 1024px) {
-    .slides img {
-        width: 400px; /* Aumenta o tamanho das imagens em computadores para ocupar toda a largura disponível */
-        height: 300px; /* Mantém a altura fixa em computadores */
-        margin: 0 auto; /* Centraliza as imagens no container */
-    }
-}
-
-/* Ajustes para laptops e tablets (largura mínima de 768px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .slides img {
-        width: 90%; /* Reduz ligeiramente o tamanho das imagens */
-        height: 300px; /* Mantém a altura fixa em laptops e tablets */
-        margin: 0 auto;
-    }
-}
-
-/* Ajustes para mobile (largura máxima de 768px) */
-@media (max-width: 768px) {
-    .slides img {
-        width: 100%; /* Ocupa toda a largura em dispositivos pequenos */
-        height: 200px; /* Ajusta a altura para dispositivos menores, se necessário */
-    }
-
-    .prev, .next {
-        padding: 5px; /* Diminui o tamanho dos botões de navegação no mobile */
-    }
 }
