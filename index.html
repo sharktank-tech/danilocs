@@ -4,108 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danilo Cavalcante Silva - Portfólio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="slides.css">
     <link rel="shortcut icon" href="favicon.png">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
+<body class="bg-cover bg-center" style="background-image: url('background.jpg');">
+
+    <header class="text-center bg-indigo-600 text-white py-10">
+        <nav class="mb-5">
+            <ul class="flex justify-center space-x-6 text-lg">
+                <li><a href="#home" class="hover:text-orange-400">Início</a></li>
+                <li><a href="#projects" class="hover:text-orange-400">Projetos</a></li>
+                <li><a href="#contact" class="hover:text-orange-400">Contato</a></li>
             </ul>
         </nav>
-        <h1>Danilo Cavalcante Silva</h1>
-        <p>Desenvolvedor Web / Back-End</p>
+        <h1 class="text-4xl font-bold mb-2">Danilo Cavalcante Silva</h1>
+        <p class="text-xl text-gray-200">Desenvolvedor Web / Back-End</p>
     </header>
 
-    <main>
+    <main class="container mx-auto px-4 py-10">
         <!-- Seção Sobre Mim -->
-        <section id="home">
-            <h2>Sobre Mim</h2>
-            <p>Olá! Me chamo Danilo, sou estudante de programação apaixonado por tecnologia. Estou em constante busca por conhecimento e adoro explorar novas áreas dentro da programação.</p>
+        <section id="home" class="text-center bg-white bg-opacity-90 rounded-lg p-8 max-w-3xl mx-auto shadow-md">
+            <h2 class="text-3xl font-semibold mb-6">Sobre Mim</h2>
+            <p class="text-lg text-gray-700">Olá! Me chamo Danilo, sou estudante de programação apaixonado por tecnologia...</p>
         </section>
 
         <!-- Seção Projetos Recentes -->
-        <section id="projects">
-            <h2>Projetos Recentes</h2>
+        <section id="projects" class="mt-16 bg-gray-100 bg-opacity-90 rounded-lg p-8">
+            <h2 class="text-3xl font-semibold text-center mb-8">Projetos Recentes</h2>
 
             <!-- Primeiro Projeto com Slides -->
-            <article class="project">
-                <div class="project-header">
-                    <h3>Landing Page</h3>
+            <article class="mb-12">
+                <div class="text-center mb-4">
+                    <h3 class="text-2xl font-bold">Landing Page</h3>
                 </div>
-                <div class="project-content">
-                    <div class="slider-container">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="slider-container mb-6 md:mb-0">
                         <figure class="slides">
                             <img src="slides/projeto1-slide1.jpg" alt="Slide 1 do Projeto Landing Page">
                             <img src="slides/projeto1-slide2.jpg" alt="Slide 2 do Projeto Landing Page">
                             <img src="slides/projeto1-slide1.jpg" alt="Slide 3 do Projeto Landing Page">
                         </figure>
-                        <button class="prev" onclick="moveSlide(-1, 0)" aria-label="Slide anterior do projeto Landing Page">&#10094;</button>
-                        <button class="next" onclick="moveSlide(1, 0)" aria-label="Próximo slide do projeto Landing Page">&#10095;</button>
+                        <button class="prev" onclick="moveSlide(-1, 0)">&#10094;</button>
+                        <button class="next" onclick="moveSlide(1, 0)">&#10095;</button>
                     </div>
-                    <div class="project-description">
-                        <p>Landing page simples, intuitiva e eficaz para os serviços de frete local. A página tem como principal objetivo fornecer informações essenciais sobre o serviço, como localização, horário de atendimento, e facilitar o contato com o cliente através de um botão que direcionará diretamente para o WhatsApp do prestador de serviço</p>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Segundo Projeto com Slides -->
-            <article class="project">
-                <div class="project-header">
-                    <h3>Eponto</h3>
-                </div>
-                <div class="project-content">
-                    <div class="slider-container">
-                        <figure class="slides">
-                            <img src="slides/projeto2-slide1.jpg" alt="Slide 1 do Projeto Eponto">
-                            <img src="slides/projeto2-slide2.jpg" alt="Slide 2 do Projeto Eponto">
-                            <img src="slides/projeto2-slide3.jpg" alt="Slide 3 do Projeto Eponto">
-                        </figure>
-                        <button class="prev" onclick="moveSlide(-1, 1)" aria-label="Slide anterior do projeto Eponto">&#10094;</button>
-                        <button class="next" onclick="moveSlide(1, 1)" aria-label="Próximo slide do projeto Eponto">&#10095;</button>
-                    </div>
-                    <div class="project-description">
-                        <p>Projeto próprio de uma aplicação desenvolvida para gerenciamento da marcação de ponto eletrônico...</p>
+                    <div class="project-description max-w-lg text-left">
+                        <p class="text-lg">Landing page simples, intuitiva e eficaz para os serviços de frete local...</p>
                     </div>
                 </div>
             </article>
 
-            <!-- Terceiro Projeto com Slides -->
-            <article class="project">
-                <div class="project-header">
-                    <h3>Sistema de Gerenciamento de Tarefas</h3>
-                </div>
-                <div class="project-content">
-                    <div class="slider-container">
-                        <figure class="slides">
-                            <img src="slides/projeto3-slide1.jpg" alt="Slide 1 do Projeto Tarefas">
-                            <img src="slides/projeto3-slide2.jpg" alt="Slide 2 do Projeto Tarefas">
-                            <img src="slides/projeto3-slide3.jpg" alt="Slide 3 do Projeto Tarefas">
-                        </figure>
-                        <button class="prev" onclick="moveSlide(-1, 2)" aria-label="Slide anterior do projeto de tarefas">&#10094;</button>
-                        <button class="next" onclick="moveSlide(1, 2)" aria-label="Próximo slide do projeto de tarefas">&#10095;</button>
-                    </div>
-                    <div class="project-description">
-                        <p>Este é um projeto de gerenciamento de tarefas que permite adicionar, editar, excluir e visualizar tarefas...</p>
-                    </div>
-                </div>
-            </article>
-
+            <!-- Mais projetos -->
         </section>
     </main>
 
     <!-- Seção de Contato -->
-    <footer id="contact">
-        <h2>Contato</h2>
-        <p>Entre em contato comigo através de uma das opções abaixo:</p>
-        <div class="contact-links">
-            <a class="whatsapp" href="https://wa.me/63981154698" target="_blank" aria-label="Contato via WhatsApp">WhatsApp</a>
-            <a class="linkedin" href="https://www.linkedin.com/in/danilo-cavalcante-5340b5253/" target="_blank" aria-label="Perfil no LinkedIn">LinkedIn</a>
-            <a class="github" href="https://github.com/sharktank-tech" target="_blank" aria-label="Repositório no GitHub">GitHub</a>
+    <footer id="contact" class="bg-indigo-600 text-white text-center py-10">
+        <h2 class="text-2xl mb-4">Contato</h2>
+        <p class="mb-6">Entre em contato comigo através de uma das opções abaixo:</p>
+        <div class="flex justify-center space-x-4">
+            <a href="https://wa.me/63981154698" target="_blank" class="bg-green-500 hover:bg-green-600 py-2 px-4 rounded-lg">WhatsApp</a>
+            <a href="https://www.linkedin.com/in/danilo-cavalcante-5340b5253/" target="_blank" class="bg-blue-600 hover:bg-blue-700 py-2 px-4 rounded-lg">LinkedIn</a>
+            <a href="https://github.com/sharktank-tech" target="_blank" class="bg-gray-700 hover:bg-gray-800 py-2 px-4 rounded-lg">GitHub</a>
         </div>
     </footer>
 
