@@ -1,18 +1,13 @@
 let slideIndex = [0, 0, 0]; // Índices separados para cada slider
 
 function moveSlide(n, projectIndex) {
-    let slides = document.querySelectorAll('.project')[projectIndex].querySelector('.slides');
-    let totalSlides = slides.children.length;
-    
-    slideIndex[projectIndex] += n;
+    const slidesContainer = document.querySelectorAll('.project')[projectIndex].querySelector('.slides');
+    const totalSlides = slidesContainer.children.length;
 
-    if (slideIndex[projectIndex] >= totalSlides) {
-        slideIndex[projectIndex] = 0; // Volta ao primeiro slide
-    }
+    // Atualiza o índice do slide atual
+    slideIndex[projectIndex] = (slideIndex[projectIndex] + n + totalSlides) % totalSlides;
 
-    if (slideIndex[projectIndex] < 0) {
-        slideIndex[projectIndex] = totalSlides - 1; // Vai ao último slide
-    }
-
-    slides.style.transform = `translateX(-${slideIndex[projectIndex] * 100}%)`;
+    // Transforma a posição do container de slides
+    slidesContainer.style.transform = `translateX(-${slideIndex[projectIndex] * 100}%)`;
+    slidesContainer.style.transition = 'transform 0.5s ease'; // Adiciona uma transição suave
 }
