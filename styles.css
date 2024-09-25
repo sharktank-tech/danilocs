@@ -176,7 +176,6 @@ footer p {
     background-color: #222;
 }
 
-
 /* Ajustes de layout para diferentes tamanhos de tela */
 
 /* Ajustes para computadores (largura mínima de 1024px) */
@@ -237,6 +236,7 @@ footer p {
         font-size: 0.9rem;
         padding: 6px 12px;
     }
+
     /* Links de contato no footer também menores */
     .contact-links a {
         font-size: 0.9rem;
