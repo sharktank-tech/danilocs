@@ -7,16 +7,15 @@
     border-radius: 8px;
 }
 
-/* Contêiner de slides */
 .slides {
     display: flex;
     transition: transform 0.5s ease;
 }
 
-/* Imagens dentro dos slides */
 .slides img {
-    width: 100%; /* Valor padrão para telas pequenas */
-    height: auto;
+    width: 100%; /* Mantém a largura total do slide */
+    height: 300px; /* Define uma altura fixa para todas as imagens */
+    object-fit: cover; /* Faz com que a imagem preencha o espaço do slide sem distorção */
 }
 
 /* Botões de navegação (próximo e anterior) */
@@ -30,7 +29,6 @@
     padding: 10px;
     cursor: pointer;
     border-radius: 50%;
-    z-index: 10; /* Garante que os botões fiquem acima do conteúdo */
 }
 
 .prev {
@@ -45,6 +43,7 @@
 @media (min-width: 1024px) {
     .slides img {
         width: 400px; /* Aumenta o tamanho das imagens em computadores para ocupar toda a largura disponível */
+        height: 300px; /* Mantém a altura fixa em computadores */
         margin: 0 auto; /* Centraliza as imagens no container */
     }
 }
@@ -53,6 +52,7 @@
 @media (min-width: 768px) and (max-width: 1023px) {
     .slides img {
         width: 90%; /* Reduz ligeiramente o tamanho das imagens */
+        height: 300px; /* Mantém a altura fixa em laptops e tablets */
         margin: 0 auto;
     }
 }
@@ -61,6 +61,7 @@
 @media (max-width: 768px) {
     .slides img {
         width: 100%; /* Ocupa toda a largura em dispositivos pequenos */
+        height: 200px; /* Ajusta a altura para dispositivos menores, se necessário */
     }
 
     .prev, .next {
