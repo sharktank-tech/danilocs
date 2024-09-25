@@ -41,7 +41,7 @@
 /* Ajustes para computadores (largura mínima de 1024px) */
 @media (min-width: 1024px) {
     .slides img {
-        width: 100%; /* Aumenta o tamanho das imagens em computadores para ocupar toda a largura disponível */
+        width: 400px; /* Aumenta o tamanho das imagens em computadores para ocupar toda a largura disponível */
         margin: 0 auto; /* Centraliza as imagens no container */
     }
 }
