@@ -1,11 +1,10 @@
-/* Estilos básicos para o slider */
+/* Estilos básicos para o container do slider */
 .slider-container {
     position: relative;
     max-width: 100%;
     margin: 20px auto;
     overflow: hidden;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .slides {
@@ -14,11 +13,11 @@
 }
 
 .slides img {
-    width: 100%;
+    width: 100%; /* Valor padrão para telas pequenas */
     height: auto;
-    border-radius: 8px;
 }
 
+/* Botões de navegação (próximo e anterior) */
 .prev, .next {
     position: absolute;
     top: 50%;
@@ -29,11 +28,6 @@
     padding: 10px;
     cursor: pointer;
     border-radius: 50%;
-    transition: background-color 0.3s ease;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .prev {
@@ -44,18 +38,29 @@
     right: 10px;
 }
 
-/* Ajustes para mobile */
-@media (max-width: 768px) {
-
+/* Ajustes para computadores (largura mínima de 1024px) */
+@media (min-width: 1024px) {
     .slides img {
-        width: 100%;
+        width: 80%; /* Reduz o tamanho das imagens em computadores */
+        margin: 0 auto; /* Centraliza as imagens no container */
+    }
+}
+
+/* Ajustes para laptops e tablets (largura mínima de 768px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .slides img {
+        width: 90%; /* Reduz ligeiramente o tamanho das imagens */
+        margin: 0 auto;
+    }
+}
+
+/* Ajustes para mobile (largura máxima de 768px) */
+@media (max-width: 768px) {
+    .slides img {
+        width: 100%; /* Ocupa toda a largura em dispositivos pequenos */
     }
 
     .prev, .next {
-        padding: 5px;
-    }
-
-    .prev:hover, .next:hover {
-        background-color: rgba(0, 0, 0, 0.7);
+        padding: 5px; /* Diminui o tamanho dos botões de navegação no mobile */
     }
 }
