@@ -226,7 +226,20 @@ footer p {
         width: 100%;
     }
 
+    /* Navegação em dispositivos móveis */
     nav ul {
         flex-direction: column;
+    }
+
+    /* Diminui o tamanho dos links no mobile */
+    nav ul li a {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    /* Links de contato no footer também menores */
+    .contact-links a {
+        font-size: 0.9rem;
+        padding: 8px 16px;
     }
 }
