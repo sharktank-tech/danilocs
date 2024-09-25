@@ -84,13 +84,27 @@ section h2 {
 }
 
 .project {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
+}
+
+.project-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-header h3 {
+    font-size: 2rem;
+    color: #555;
+}
+
+/* Ajuste do Slider e Descrição */
+.project-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Ajuste do Slider para a esquerda */
@@ -116,13 +130,7 @@ section h2 {
     text-align: left;
 }
 
-.project h3 {
-    margin-bottom: 10px;
-    font-size: 1.75rem;
-    color: #555;
-}
-
-.project p {
+.project-description p {
     font-size: 1rem;
     color: #333;
 }
@@ -172,7 +180,7 @@ section h2 {
 
 /* Ajustes para mobile (largura máxima de 768px) */
 @media (max-width: 768px) {
-    .project {
+    .project-content {
         flex-direction: column; /* Em mobile, o layout será vertical */
         align-items: center;
     }
