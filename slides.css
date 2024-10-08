@@ -14,17 +14,18 @@
 
 .slides img {
     width: 100%; /* Mantém a largura total do slide */
-    height: auto; /* Permite que a altura se ajuste conforme a proporção da imagem */
-    object-fit: contain; /* Ajusta a imagem ao container sem distorção nem corte */
+    height: auto; /* Ajusta a altura conforme a proporção da imagem */
+    object-fit: contain; /* Ajusta a imagem ao container sem distorção */
 }
 
-/* Para garantir que apenas um slide seja mostrado por vez */
+/* Esconde todas as imagens inicialmente */
 .slides img {
-    display: none; /* Esconde todas as imagens inicialmente */
+    display: none;
 }
 
+/* Mostra apenas a imagem ativa */
 .slides img.active {
-    display: block; /* Mostra apenas a imagem ativa */
+    display: block;
 }
 
 /* Botões de navegação (próximo e anterior) */
