@@ -1,29 +1,26 @@
-let slideIndex = [0, 0]; // Índice atual de cada slider
-let slideId = ["slides1", "slides2"]; // IDs de cada container de slides
+let slideIndex = [0, 0, 0]; // Índices separados para cada slider
 
-// Inicializa os sliders
-function showSlides(n, sliderIndex) {
-    let slides = document.getElementsByClassName(slideId[sliderIndex]);
-    if (n >= slides.length) { slideIndex[sliderIndex] = 0; } 
-    if (n < 0) { slideIndex[sliderIndex] = slides.length - 1; }
-    
-    // Esconde todas as imagens do slider
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+function moveSlide(n, projectIndex) {
+    const slidesContainers = document.querySelectorAll('.slider-container'); // Seleciona todos os contêineres de slides
+    const slidesContainer = slidesContainers[projectIndex].querySelector('.slides'); // Seleciona o contêiner específico do projeto
+    const totalSlides = slidesContainer.children.length;
+
+    // Atualiza o índice do slide atual, garantindo que ele seja circular
+    slideIndex[projectIndex] = (slideIndex[projectIndex] + n + totalSlides) % totalSlides;
+
+    // Esconde todas as imagens e mostra apenas a imagem ativa
+    for (let i = 0; i < totalSlides; i++) {
+        slidesContainer.children[i].classList.remove('active');
     }
-
-    // Mostra a imagem ativa
-    slides[slideIndex[sliderIndex]].style.display = "block";
+    slidesContainer.children[slideIndex[projectIndex]].classList.add('active');
 }
 
-// Movimenta os slides
-function moveSlide(n, sliderIndex) {
-    showSlides(slideIndex[sliderIndex] += n, sliderIndex);
-}
+// Garante que a transição seja sempre suave para todos os containers de slides
+document.querySelectorAll('.slides').forEach(slidesContainer => {
+    slidesContainer.style.transition = 'transform 0.5s ease-in-out';
+});
 
-// Inicia todos os sliders
-window.onload = function() {
-    for (let i = 0; i < slideId.length; i++) {
-        showSlides(slideIndex[i], i);
-    }
-};
+// Para garantir que a primeira imagem seja visível no início
+document.querySelectorAll('.slides').forEach((slidesContainer, index) => {
+    slidesContainer.children[0].classList.add('active');
+});
