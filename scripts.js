@@ -1,83 +1,61 @@
-// Alternar Modo Escuro
-document.getElementById('dark-mode-toggle').onclick = function() {
+// Seletor do botão de modo escuro
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+// Função para alternar o modo escuro
+darkModeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
-};
-
-const carousel = document.getElementById('skills-carousel');
-let position = 0;
-const itemCount = carousel.children.length; // Total de itens
-const itemWidth = 160; // Largura dos itens (ajuste conforme necessário)
-const totalWidth = itemCount * itemWidth; // Largura total do carrossel
-
-// Clona os elementos do carrossel para criar um efeito infinito
-const cloneItems = () => {
-    const items = Array.from(carousel.children);
-    items.forEach(item => {
-        const clone = item.cloneNode(true);
-        carousel.appendChild(clone); // Adiciona os clones ao final
-    });
-};
-
-// Inicializa o carrossel clonando os itens
-cloneItems();
-const clonedItemCount = carousel.children.length; // Conta após a clonagem
-const clonedTotalWidth = clonedItemCount * itemWidth; // Largura total após clonagem
-
-// Atualiza a posição do carrossel
-function moveCarousel() {
-    position -= itemWidth; // Move 160px para a esquerda
-    if (position <= -clonedTotalWidth / 2) {
-        position = -clonedTotalWidth / 4; // Move a posição para o meio da nova lista de itens
+    
+    // Atualiza o texto do botão com base no modo
+    if (document.body.classList.contains('dark-mode')) {
+        darkModeToggle.textContent = 'Modo Claro';
+    } else {
+        darkModeToggle.textContent = 'Modo Escuro';
     }
-    carousel.style.transform = `translateX(${position}px)`;
+});
+
+// Carrossel de habilidades
+const carousel = document.querySelector('.carousel');
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
+
+let currentIndex = 0;
+const items = document.querySelectorAll('.carousel-item');
+const totalItems = items.length;
+
+function updateCarousel() {
+    const offset = -currentIndex * (items[0].clientWidth + 10); // 10 é a margem entre os itens
+    carousel.style.transform = `translateX(${offset}px)`;
 }
 
-// Botões de Navegação
-document.getElementById('prev').onclick = () => {
-    position += itemWidth; // Move 160px para a direita
-    if (position > 0) {
-        position = -((clonedItemCount / 2) * itemWidth); // Se estiver no início, vai para a metade dos clones
-    }
-    carousel.style.transform = `translateX(${position}px)`;
-};
-
-document.getElementById('next').onclick = moveCarousel;
-
-// Move o carrossel a cada 3 segundos
-setInterval(moveCarousel, 3000);
-
-// Função para movimento click+arrasta
-let isDown = false;
-let startX;
-let scrollLeft;
-
-carousel.addEventListener('mousedown', (e) => {
-    isDown = true;
-    startX = e.pageX - carousel.offsetLeft;
-    scrollLeft = carousel.scrollLeft;
+// Botão anterior
+prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - 1;
+    updateCarousel();
 });
 
-carousel.addEventListener('mouseleave', () => {
-    isDown = false;
+// Botão próximo
+nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex < totalItems - 1) ? currentIndex + 1 : 0;
+    updateCarousel();
 });
 
-carousel.addEventListener('mouseup', () => {
-    isDown = false;
+// Carrossel de projetos
+const projectCarousel = document.querySelector('.project-carousel');
+const projectCards = document.querySelectorAll('.project-card');
+let projectIndex = 0;
+
+function updateProjectCarousel() {
+    const projectOffset = -projectIndex * (projectCards[0].clientWidth + 10); // 10 é a margem entre os cards
+    projectCarousel.style.transform = `translateX(${projectOffset}px)`;
+}
+
+// Lógica de navegação do carrossel de projetos
+prevButton.addEventListener('click', () => {
+    projectIndex = (projectIndex > 0) ? projectIndex - 1 : projectCards.length - 1;
+    updateProjectCarousel();
 });
 
-carousel.addEventListener('mousemove', (e) => {
-    if (!isDown) return; // Se não estiver pressionado, não faz nada
-    e.preventDefault(); // Previne o comportamento padrão
-    const x = e.pageX - carousel.offsetLeft;
-    const walk = (x - startX) * 2; // O número 2 ajusta a sensibilidade
-    carousel.scrollLeft = scrollLeft - walk;
+nextButton.addEventListener('click', () => {
+    projectIndex = (projectIndex < projectCards.length - 1) ? projectIndex + 1 : 0;
+    updateProjectCarousel();
 });
-
-// Form Submission
-document.getElementById('contact-form').onsubmit = function(e) {
-    e.preventDefault(); // Prevenir envio padrão do formulário
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    document.getElementById('notification').innerText = `Obrigado, ${name}! Você será contatado em ${email}.`;
-    e.target.reset(); // Reinicia os campos do formulário
-};
