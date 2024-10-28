@@ -27,12 +27,12 @@ h1 {
 h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    color: #4CAF50;
+    color: #1733d8;
     text-align: center;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #1733d8;
     color: white;
     padding: 1.5rem;
     text-align: center;
@@ -64,7 +64,7 @@ nav a:hover {
 #dark-mode-toggle {
     background-color: #fff;
     color: #333;
-    border: 2px solid #4CAF50;
+    border: 2px solid #1733d8;
     padding: 0.5rem 1rem;
     cursor: pointer;
     font-weight: 600;
@@ -73,7 +73,7 @@ nav a:hover {
 }
 
 #dark-mode-toggle:hover {
-    background-color: #4CAF50;
+    background-color: #1733d8;
     color: white;
 }
 
@@ -141,7 +141,7 @@ nav a:hover {
 
 button {
     display: inline-block;
-    background-color: #4CAF50;
+    background-color: #1733d8;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -152,7 +152,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #071b91;
 }
 
 #prev, #next {
@@ -190,7 +190,7 @@ button[type="submit"] {
     padding: 10px;
     font-size: 1rem;
     border-radius: 5px;
-    background-color: #4CAF50;
+    background-color: #1733d8;
 }
 
 #notification {
