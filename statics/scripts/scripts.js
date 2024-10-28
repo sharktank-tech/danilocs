@@ -1,6 +1,7 @@
 import { desafios } from "./desafios.js";
 import { projetos } from "./projetos.js";
 
+// Selecionar elementos do DOM
 const navigation = document.querySelector("#navigation");
 const backToTopButton = document.querySelector("#backToTopButton");
 const toggle = document.querySelector("#sw-checkbox");
@@ -12,37 +13,50 @@ const notebook_2_white = document.querySelector("#notebook-2-white");
 const vidro = document.querySelector("#vidro");
 
 window.addEventListener("load", function begin() {
-  projetos(projectsSection);
+  if (projectsSection) {
+    projetos(projectsSection);
+  }
+  
   const desafioBtn = document.querySelector("#desafio");
-
-  desafioBtn.addEventListener("click", () => {
-    desafios(projectsSection);
-    document
-      .querySelector("#backToProjectsBtn")
-      .addEventListener("click", begin);
-  });
+  if (desafioBtn) {
+    desafioBtn.addEventListener("click", () => {
+      desafios(projectsSection);
+      const backToProjectsBtn = document.querySelector("#backToProjectsBtn");
+      if (backToProjectsBtn) {
+        backToProjectsBtn.addEventListener("click", begin);
+      }
+    });
+  }
 });
 
+// Eventos de scroll
 window.addEventListener("scroll", onScroll);
-onScroll();
+onScroll(); // Chamada inicial para configurar corretamente a navegação e o botão de voltar ao topo
 
-window.onload = setTimeout(() => {
-  notebook_1.style.opacity = 0;
-
-  notebook_1.style.animation = "none";
-  notebook_2.style.animation = "none";
-  notebook_2_white.style.animation = "none";
-  vidro.style.animation = "none";
-}, 4000);
+// Configuração para esconder os notebooks após um tempo
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    if (notebook_1) notebook_1.style.opacity = 0;
+    if (notebook_1) notebook_1.style.animation = "none";
+    if (notebook_2) notebook_2.style.animation = "none";
+    if (notebook_2_white) notebook_2_white.style.animation = "none";
+    if (vidro) vidro.style.animation = "none";
+  }, 4000);
+});
 
 function onScroll() {
   showNavOnScroll();
   showBackToTopButtonOnScroll();
 
-  activateMenuAtCurrentSection(about);
-  activateMenuAtCurrentSection(projects);
-  activateMenuAtCurrentSection(knowledge);
-  activateMenuAtCurrentSection(contact);
+  const about = document.querySelector("#about");
+  const projects = document.querySelector("#projects");
+  const knowledge = document.querySelector("#knowledge");
+  const contact = document.querySelector("#contact");
+
+  if (about) activateMenuAtCurrentSection(about);
+  if (projects) activateMenuAtCurrentSection(projects);
+  if (knowledge) activateMenuAtCurrentSection(knowledge);
+  if (contact) activateMenuAtCurrentSection(contact);
 }
 
 function activateMenuAtCurrentSection(section) {
@@ -58,31 +72,34 @@ function activateMenuAtCurrentSection(section) {
     sectionTopReachOrPassedTargetLine && !sectionEndPassedTargetLine;
 
   const sectionId = section.getAttribute("id");
-  const menuElement = document.querySelector(`.menu a[href*=${sectionId}]`);
+  const menuElement = document.querySelector(`.menu a[href*="${sectionId}"]`);
 
-  menuElement.classList.remove("active");
+  if (menuElement) {
+    menuElement.classList.remove("active");
 
-  if (sectionBoundaries) {
-    menuElement.classList.add("active");
+    if (sectionBoundaries) {
+      menuElement.classList.add("active");
+    }
   }
 }
 
 function showNavOnScroll() {
-  if (scrollY > 0) {
+  if (scrollY > 0 && navigation) {
     navigation.classList.add("scroll");
-  } else {
+  } else if (navigation) {
     navigation.classList.remove("scroll");
   }
 }
 
 function showBackToTopButtonOnScroll() {
-  if (scrollY > 550) {
+  if (scrollY > 550 && backToTopButton) {
     backToTopButton.classList.add("show");
-  } else {
+  } else if (backToTopButton) {
     backToTopButton.classList.remove("show");
   }
 }
 
+// Funções para abrir e fechar o menu
 openMenu();
 function openMenu() {
   const openBtns = document.querySelectorAll(".open");
@@ -103,6 +120,7 @@ function closeMenu() {
   });
 }
 
+// ScrollReveal para animações
 ScrollReveal({
   origin: "bottom",
   distance: "50px",
@@ -118,12 +136,15 @@ ScrollReveal({
   #projects header,
   #projects .card,
   #knowledge,
-  #knowledg header,
-  #knowledg .card,
+  #knowledge header,
+  #knowledge .card,
   #contact,
   #contact header`
 );
 
-toggle.addEventListener("change", () => {
-  document.body.classList.toggle("light-mode");
-});
+// Alternar entre modos claro e escuro
+if (toggle) {
+  toggle.addEventListener("change", () => {
+    document.body.classList.toggle("light-mode");
+  });
+}
