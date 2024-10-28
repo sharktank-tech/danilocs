@@ -9,47 +9,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-indigo-300 text-gray-800 transition-colors duration-500">
-    <header class="bg-blue-700 text-white p-6 text-center shadow-md mb-8">
-        <h1 class="text-3xl font-bold">Meu Portfólio</h1>
+<body class="bg-indigo-200 text-gray-800 transition-colors duration-500">
+    <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-6 text-center shadow-lg mb-8">
+        <h1 class="text-4xl font-bold">Meu Portfólio</h1>
         <nav>
             <ul class="flex justify-center space-x-6">
-                <li><a href="#skills" class="hover:text-gray-200">Habilidades</a></li>
-                <li><a href="#projects" class="hover:text-gray-200">Projetos</a></li>
-                <li><a href="#contact" class="hover:text-gray-200">Contato</a></li>
-                <li><button id="dark-mode-toggle" class="bg-white text-blue-700 border-2 border-blue-700 rounded px-4 py-2 font-semibold transition-colors duration-300 hover:bg-blue-700 hover:text-white">Modo Escuro</button></li>
+                <li><a href="#skills" class="hover:text-gray-200 transition-colors duration-300">Habilidades</a></li>
+                <li><a href="#projects" class="hover:text-gray-200 transition-colors duration-300">Projetos</a></li>
+                <li><a href="#contact" class="hover:text-gray-200 transition-colors duration-300">Contato</a></li>
+                <li><button id="dark-mode-toggle" class="bg-white text-blue-700 border-2 border-white rounded px-4 py-2 font-semibold transition-colors duration-300 hover:bg-blue-700 hover:text-white">Modo Escuro</button></li>
             </ul>
         </nav>
     </header>
 
     <section id="skills" class="py-10">
-        <h2 class="text-2xl font-bold text-center text-blue-700 mb-8">Minhas Habilidades</h2>
+        <h2 class="text-3xl font-bold text-center text-blue-700 mb-8">Minhas Habilidades</h2>
         <div class="carousel-container overflow-hidden w-11/12 mx-auto flex items-center">
             <div class="carousel flex transition-transform duration-500" id="skills-carousel">
-                <div class="carousel-item min-w-[160px] mx-2 p-4 bg-white rounded-lg shadow-md text-center font-semibold hover:translate-y-[-10px] transition-transform duration-300">HTML</div>
-                <div class="carousel-item min-w-[160px] mx-2 p-4 bg-white rounded-lg shadow-md text-center font-semibold hover:translate-y-[-10px] transition-transform duration-300">CSS</div>
-                <div class="carousel-item min-w-[160px] mx-2 p-4 bg-white rounded-lg shadow-md text-center font-semibold hover:translate-y-[-10px] transition-transform duration-300">JavaScript</div>
-                <div class="carousel-item min-w-[160px] mx-2 p-4 bg-white rounded-lg shadow-md text-center font-semibold hover:translate-y-[-10px] transition-transform duration-300">Python</div>
-                <div class="carousel-item min-w-[160px] mx-2 p-4 bg-white rounded-lg shadow-md text-center font-semibold hover:translate-y-[-10px] transition-transform duration-300">React</div>
-                <div class="carousel-item min-w-[160px] mx-2 p-4 bg-white rounded-lg shadow-md text-center font-semibold hover:translate-y-[-10px] transition-transform duration-300">Flask</div>
-                <div class="carousel-item min-w-[160px] mx-2 p-4 bg-white rounded-lg shadow-md text-center font-semibold hover:translate-y-[-10px] transition-transform duration-300">Django</div>
+                <div class="carousel-item min-w-[160px] mx-2 p-4 bg-white rounded-lg shadow-md text-center font-semibold transform transition-transform duration-300 hover:scale-105">HTML</div>
+                <div class="carousel-item min-w-[160px] mx-2 p-4 bg-white rounded-lg shadow-md text-center font-semibold transform transition-transform duration-300 hover:scale-105">CSS</div>
+                <div class="carousel-item min-w-[160px] mx-2 p-4 bg-white rounded-lg shadow-md text-center font-semibold transform transition-transform duration-300 hover:scale-105">JavaScript</div>
+                <div class="carousel-item min-w-[160px] mx-2 p-4 bg-white rounded-lg shadow-md text-center font-semibold transform transition-transform duration-300 hover:scale-105">Python</div>
+                <div class="carousel-item min-w-[160px] mx-2 p-4 bg-white rounded-lg shadow-md text-center font-semibold transform transition-transform duration-300 hover:scale-105">React</div>
+                <div class="carousel-item min-w-[160px] mx-2 p-4 bg-white rounded-lg shadow-md text-center font-semibold transform transition-transform duration-300 hover:scale-105">Flask</div>
+                <div class="carousel-item min-w-[160px] mx-2 p-4 bg-white rounded-lg shadow-md text-center font-semibold transform transition-transform duration-300 hover:scale-105">Django</div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="py-10 bg-gray-300">
-        <h2 class="text-2xl font-bold text-center text-blue-700 mb-8">Projetos</h2>
+    <section id="projects" class="py-10 bg-gray-100">
+        <h2 class="text-3xl font-bold text-center text-blue-700 mb-8">Projetos</h2>
         <div class="project-carousel flex overflow-x-auto py-4 scroll-smooth">
-            <div class="project-card min-w-[250px] mx-4 p-4 bg-white rounded-lg shadow-md hover:translate-y-[-10px] transition-transform duration-300">
-                <h3 class="font-semibold">Projeto 1</h3>
+            <div class="project-card min-w-[250px] mx-4 p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                <h3 class="font-semibold text-lg">Projeto 1</h3>
                 <p>Descrição do projeto 1.</p>
             </div>
-            <div class="project-card min-w-[250px] mx-4 p-4 bg-white rounded-lg shadow-md hover:translate-y-[-10px] transition-transform duration-300">
-                <h3 class="font-semibold">Projeto 2</h3>
+            <div class="project-card min-w-[250px] mx-4 p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                <h3 class="font-semibold text-lg">Projeto 2</h3>
                 <p>Descrição do projeto 2.</p>
             </div>
-            <div class="project-card min-w-[250px] mx-4 p-4 bg-white rounded-lg shadow-md hover:translate-y-[-10px] transition-transform duration-300">
-                <h3 class="font-semibold">Projeto 3</h3>
+            <div class="project-card min-w-[250px] mx-4 p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                <h3 class="font-semibold text-lg">Projeto 3</h3>
                 <p>Descrição do projeto 3.</p>
             </div>
         </div>
@@ -60,12 +60,12 @@
     </section>
 
     <section id="contact" class="py-10 bg-white">
-        <h2 class="text-2xl font-bold text-center text-blue-700 mb-8">Contato</h2>
+        <h2 class="text-3xl font-bold text-center text-blue-700 mb-8">Contato</h2>
         <form id="contact-form" class="flex flex-col w-11/12 max-w-md mx-auto">
             <label for="name" class="font-semibold mb-1">Nome:</label>
-            <input type="text" id="name" required class="border rounded p-2 mb-4">
+            <input type="text" id="name" required class="border rounded p-2 mb-4 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300">
             <label for="email" class="font-semibold mb-1">Email:</label>
-            <input type="email" id="email" required class="border rounded p-2 mb-4">
+            <input type="email" id="email" required class="border rounded p-2 mb-4 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300">
             <button type="submit" class="bg-blue-700 text-white rounded px-4 py-2 hover:bg-blue-600 transition-colors">Enviar</button>
         </form>
         <div id="notification" class="mt-4 text-green-500 text-center font-semibold"></div>
