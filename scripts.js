@@ -1,65 +1,48 @@
-document.getElementById('dark-mode-toggle').onclick = function() {
+// Seletor do botão de modo escuro e carrosséis
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+const carousel = document.querySelector('.carousel');
+const projectCarousel = document.querySelector('.project-carousel');
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
+const items = document.querySelectorAll('.carousel-item');
+const projectCards = document.querySelectorAll('.project-card');
+
+let currentIndex = 0;
+let projectIndex = 0;
+
+// Função para alternar o modo escuro
+function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
-};
-
-const carousel = document.getElementById('skills-carousel');
-let position = 0;
-
-// Clona os elementos do carrossel para criar um efeito infinito
-const cloneItems = () => {
-    const items = Array.from(carousel.children);
-    items.forEach(item => {
-        const clone = item.cloneNode(true);
-        carousel.appendChild(clone); // Adiciona os clones ao final
-    });
-};
-
-cloneItems(); // Clona os itens ao iniciar
-
-// Atualiza a posição do carrossel
-function moveCarousel() {
-    position -= 100; // Move 100% para a esquerda
-    if (position <= -((carousel.children.length / 2) * 100)) {
-        position = 0; // Reinicia a posição
-    }
-    carousel.style.transform = `translateX(${position}%)`;
+    darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Escuro';
 }
 
-// Move o carrossel a cada 3 segundos
-setInterval(moveCarousel, 3000);
+// Função para atualizar o carrossel
+function updateCarousel(carousel, index, items) {
+    const offset = -index * (items[0].clientWidth + 10); // 10 é a margem entre os itens
+    carousel.style.transform = `translateX(${offset}px)`;
+}
 
-// Função para movimento click+arrasta
-let isDown = false;
-let startX;
-let scrollLeft;
+// Evento para alternar o modo escuro
+darkModeToggle.addEventListener('click', toggleDarkMode);
 
-carousel.addEventListener('mousedown', (e) => {
-    isDown = true;
-    startX = e.pageX - carousel.offsetLeft;
-    scrollLeft = carousel.scrollLeft;
+// Evento para navegação do carrossel de habilidades
+prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
+    updateCarousel(carousel, currentIndex, items);
 });
 
-carousel.addEventListener('mouseleave', () => {
-    isDown = false;
+nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
+    updateCarousel(carousel, currentIndex, items);
 });
 
-carousel.addEventListener('mouseup', () => {
-    isDown = false;
+// Evento para navegação do carrossel de projetos
+prevButton.addEventListener('click', () => {
+    projectIndex = (projectIndex > 0) ? projectIndex - 1 : projectCards.length - 1;
+    updateCarousel(projectCarousel, projectIndex, projectCards);
 });
 
-carousel.addEventListener('mousemove', (e) => {
-    if (!isDown) return; // Se não estiver pressionado, não faz nada
-    e.preventDefault(); // Previne o comportamento padrão
-    const x = e.pageX - carousel.offsetLeft;
-    const walk = (x - startX) * 2; // O número 2 ajusta a sensibilidade
-    carousel.scrollLeft = scrollLeft - walk;
+nextButton.addEventListener('click', () => {
+    projectIndex = (projectIndex < projectCards.length - 1) ? projectIndex + 1 : 0;
+    updateCarousel(projectCarousel, projectIndex, projectCards);
 });
-
-// Form Submission
-document.getElementById('contact-form').onsubmit = function(e) {
-    e.preventDefault(); // Prevent default form submission
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    document.getElementById('notification').innerText = `Obrigado, ${name}! Você será contatado em ${email}.`;
-    e.target.reset(); // Reset form fields
-};
