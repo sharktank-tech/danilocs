@@ -8,129 +8,100 @@
     <link rel="shortcut icon" href="favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        /* Responsividade */
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav ul li {
-                margin: 10px 0;
-            }
-
-            .carousel-container {
-                width: 100%;
-            }
-
-            .carousel-item, .project-card {
-                min-width: 100%;
-                margin: 0; /* Remove margens em telas menores */
-            }
-
-            #prev, #next {
-                font-size: 1.2rem; /* Ajuste de tamanho em telas menores */
-            }
-
-            #dark-mode-toggle {
-                width: 100%; /* Botão ocupa 100% da largura */
-                margin-top: 10px; /* Adiciona espaçamento acima do botão */
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            h2 {
-                font-size: 1.5rem;
-            }
-
-            nav ul li {
-                margin: 5px 0;
-            }
-
-            .project-card {
-                min-width: 100%; /* Ajusta a largura dos cards em telas menores */
-            }
-        }
-
-        #dark-mode-toggle {
-            position: absolute; /* Posição absoluta para fixar no canto */
-            right: 20px; /* Distância da borda direita */
-            top: 20px; /* Distância do topo */
-            z-index: 10; /* Garante que o botão fique acima de outros elementos */
-        }
-    </style>
+    <link src="style.css"></link>
 </head>
 <body class="bg-indigo-200 text-gray-800 transition-colors duration-500">
-    <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-6 text-center shadow-lg mb-8 relative"> <!-- Adiciona 'relative' -->
-        <h1 class="text-4xl font-bold">Danilo Cavalcante Silva</h1>
-    
+    <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-6 text-center shadow-lg mb-8">
+        <h1>Bem-vindo ao meu portfólio</h1>
         <nav>
-            <ul class="flex flex-col md:flex-row justify-center space-y-2 md:space-y-0 md:space-x-6">
-                <li><a href="#skills" class="hover:text-gray-200 transition-colors duration-300">Habilidades</a></li>
-                <li><a href="#projects" class="hover:text-gray-200 transition-colors duration-300">Projetos</a></li>
-                <li><a href="#contact" class="hover:text-gray-200 transition-colors duration-300">Contato</a></li>
+            <ul>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><button id="dark-mode-toggle">Modo Escuro</button></li>
             </ul>
-        </nav>        
+        </nav>
     </header>
 
-    <section id="skills" class="py-10">
-        <h2 class="text-3xl font-bold text-center text-blue-700 mb-8">Minhas Habilidades</h2>
-        <div class="carousel-container overflow-hidden w-11/12 mx-auto flex items-center">
-            <div class="carousel flex transition-transform duration-500" id="skills-carousel">
-                <div class="carousel-item min-w-[160px] mx-2 p-4 bg-white rounded-lg shadow-md text-center font-semibold transform transition-transform duration-300 hover:scale-105">HTML</div>
-                <div class="carousel-item min-w-[160px] mx-2 p-4 bg-white rounded-lg shadow-md text-center font-semibold transform transition-transform duration-300 hover:scale-105">CSS</div>
-                <div class="carousel-item min-w-[160px] mx-2 p-4 bg-white rounded-lg shadow-md text-center font-semibold transform transition-transform duration-300 hover:scale-105">JavaScript</div>
-                <div class="carousel-item min-w-[160px] mx-2 p-4 bg-white rounded-lg shadow-md text-center font-semibold transform transition-transform duration-300 hover:scale-105">Python</div>
-                <div class="carousel-item min-w-[160px] mx-2 p-4 bg-white rounded-lg shadow-md text-center font-semibold transform transition-transform duration-300 hover:scale-105">Tailwind</div>
-                <div class="carousel-item min-w-[160px] mx-2 p-4 bg-white rounded-lg shadow-md text-center font-semibold transform transition-transform duration-300 hover:scale-105">Flask</div>
-                <div class="carousel-item min-w-[160px] mx-2 p-4 bg-white rounded-lg shadow-md text-center font-semibold transform transition-transform duration-300 hover:scale-105">SQL</div>
+    <section id="skills" class="text-center">
+        <h2>Minhas Habilidades</h2>
+        <div class="carousel-container">
+            <div class="carousel" id="skills-carousel">
+                <div class="carousel-item">HTML</div>
+                <div class="carousel-item">CSS</div>
+                <div class="carousel-item">JavaScript</div>
+                <div class="carousel-item">React</div>
+                <div class="carousel-item">Node.js</div>
+                <div class="carousel-item">Python</div>
             </div>
+        </div>
+        <button id="prev">Anterior</button>
+        <button id="next">Próximo</button>
+    </section>
+
+    <section id="projects" class="bg-gray-300 py-8">
+        <h2 class="text-center">Meus Projetos</h2>
+        <div class="project-carousel">
+            <div class="project-card">Projeto 1</div>
+            <div class="project-card">Projeto 2</div>
+            <div class="project-card">Projeto 3</div>
+            <div class="project-card">Projeto 4</div>
         </div>
     </section>
 
-    <section id="projects" class="py-10 bg-gray-100">
-        <h2 class="text-3xl font-bold text-center text-blue-700 mb-8">Projetos</h2>
-        <div class="project-carousel flex overflow-x-auto py-4 scroll-smooth">
-            <div class="project-card min-w-[250px] mx-4 p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
-                <h3 class="font-semibold text-lg">Projeto 1</h3>
-                <p>Descrição do projeto 1.</p>
-            </div>
-            <div class="project-card min-w-[250px] mx-4 p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
-                <h3 class="font-semibold text-lg">Projeto 2</h3>
-                <p>Descrição do projeto 2.</p>
-            </div>
-            <div class="project-card min-w-[250px] mx-4 p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
-                <h3 class="font-semibold text-lg">Projeto 3</h3>
-                <p>Descrição do projeto 3.</p>
-            </div>
-        </div>
-        <div class="flex justify-center mt-4">
-            <button id="prev" class="bg-blue-700 text-white rounded px-4 py-2 mx-2 hover:bg-blue-600 transition-colors">Anterior</button>
-            <button id="next" class="bg-blue-700 text-white rounded px-4 py-2 mx-2 hover:bg-blue-600 transition-colors">Próximo</button>
-        </div>
-    </section>
-
-    <section id="contact" class="py-10 bg-white">
-        <h2 class="text-3xl font-bold text-center text-blue-700 mb-8">Contato</h2>
-        <form id="contact-form" class="flex flex-col w-11/12 max-w-md mx-auto">
-            <label for="name" class="font-semibold mb-1">Nome:</label>
-            <input type="text" id="name" required class="border rounded p-2 mb-4 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300">
-            <label for="email" class="font-semibold mb-1">Email:</label>
-            <input type="email" id="email" required class="border rounded p-2 mb-4 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300">
-            <button type="submit" class="bg-blue-700 text-white rounded px-4 py-2 hover:bg-blue-600 transition-colors">Enviar</button>
+    <section id="contact" class="py-8">
+        <h2 class="text-center">Entre em Contato</h2>
+        <form id="contact-form">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Enviar</button>
+            <div id="notification"></div>
         </form>
-        <div id="notification" class="mt-4 text-green-500 text-center font-semibold"></div>
     </section>
 
     <footer class="bg-green-600 text-white text-center p-4 mt-8">
-        <p>&copy; 2024 Danilo. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Danilo Cavalcante Silva. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script>
+        // Dark mode toggle
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Escuro';
+        });
+
+        // Carrossel de habilidades
+        const carousel = document.getElementById('skills-carousel');
+        const items = document.querySelectorAll('.carousel-item');
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            const offset = -currentIndex * (items[0].clientWidth + 10); // 10 é a margem entre os itens
+            carousel.style.transform = `translateX(${offset}px)`; // Aplica a transformação
+        }
+
+        document.getElementById('prev').addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1; // Atualiza o índice
+            updateCarousel(); // Atualiza o carrossel
+        });
+
+        document.getElementById('next').addEventListener('click', () => {
+            currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0; // Atualiza o índice
+            updateCarousel(); // Atualiza o carrossel
+        });
+
+        // Manipulação do formulário de contato
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault(); // Impede o envio do formulário
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            document.getElementById('notification').textContent = `Obrigado, ${name}. Sua mensagem foi enviada!`;
+            e.target.reset(); // Limpa o formulário
+        });
+    </script>
+    <script scr="scripts.js"></script>
 </body>
 </html>
