@@ -1,70 +1,70 @@
-/* Estilos básicos para o container do slider */
-.slider-container {
-    position: relative;
-    max-width: 100%;
-    margin: 20px auto;
-    overflow: hidden;
-    border-radius: 8px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s;
 }
 
-.slides {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.slides img {
-    width: 100%; /* Mantém a largura total do slide */
-    height: auto; /* Permite que a altura se ajuste conforme a proporção da imagem */
-    object-fit: contain; /* Ajusta a imagem ao container sem distorção nem corte */
-}
-
-/* Para garantir que apenas um slide seja mostrado por vez */
-.slides img {
-    display: none; /* Esconde todas as imagens inicialmente */
-}
-
-.slides img.active {
-    display: block; /* Mostra apenas a imagem ativa */
-}
-
-/* Botões de navegação (próximo e anterior) */
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.7);
+header {
+    background-color: #4CAF50;
     color: white;
-    border: none;
-    padding: 15px;
-    cursor: pointer;
-    border-radius: 50%;
-    font-size: 18px;
-    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
-    z-index: 10;
+    padding: 1rem;
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.9); /* Escurece ao passar o mouse */
-    transform: translateY(-50%) scale(1.1); /* Leve aumento no hover */
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-.prev {
-    left: 10px;
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
 }
 
-.next {
-    right: 10px;
+.carousel {
+    display: flex;
+    overflow: hidden;
 }
 
-/* Adiciona sombra e destaque aos botões */
-.prev, .next {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+.carousel-item {
+    min-width: 150px;
+    margin: 10px;
+    padding: 20px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-align: center;
 }
 
-/* Ajustes para telas menores */
-@media (max-width: 640px) {
-    .prev, .next {
-        padding: 10px; /* Botões menores em dispositivos móveis */
-        font-size: 16px; /* Reduz o tamanho do ícone */
+.project-carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.project-card {
+    min-width: 200px;
+    margin: 10px;
+    padding: 20px;
+    background: #eee;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+}
+
+#notification {
+    color: green;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .carousel-item, .project-card {
+        min-width: 100px;
     }
 }
