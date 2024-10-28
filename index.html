@@ -1,303 +1,177 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+<head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Portifólio de Lucyan Ovídio, desenvolvedor web Front-end" />
-    <meta name="author" content="Lucyan Ovídio" />
-    <meta property="og:description" content="Portifólio de Danilo Cavalcante, desenvolvedor web Back-end" />
+    <meta name="description" content="Portfólio de Danilo Cavalcante, desenvolvedor web Back-end" />
+    <meta name="author" content="Danilo Cavalcante" />
+    <meta property="og:description" content="Portfólio de Danilo Cavalcante, desenvolvedor web Back-end" />
     <meta property="og:image" content="./assets/images/imagem-de-lucyan-vestindo-camisa-social-branca-e-sorrindo-com-plantas-no-fundo.png" />
     <meta property="og:type" content="website" />
     <meta name="keywords" content="developer, programação, dev, desenvolvedor, programador, html, css, javascript, tailwind, github, backend, back-end" />
     <meta name="robots" content="index" />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Gemunu+Libre:wght@200&display=swap"
-      rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Gemunu+Libre:wght@200&display=swap"
+        rel="stylesheet"
     />
 
     <link
-      rel="shortcut icon"
-      href="statics/icons/favicon.png"
-      type="image/x-icon"
+        rel="shortcut icon"
+        href="statics/icons/favicon.png"
+        type="image/x-icon"
     />
     <link rel="stylesheet" href="statics/css/style.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
     <script type="module" src="statics/scripts/scripts.js" defer></script>
 
-    <title>Lucyan // Portifólio</title>
-  </head>
-  <body>
-    <nav id="navigation">
-      <div class="wrapper">
-        <a class="logo close" href="#home"> danilocs </a>
+    <title>Danilo Cavalcante // Portfólio</title>
+</head>
+<body>
+<nav id="navigation">
+    <div class="wrapper">
+        <a class="logo close" href="#home"> Danilo Cavalcante </a>
 
         <div class="menu">
-          <ul>
-            <li>
-              <a id="aboutNav" class="close" href="#about">Sobre mim</a>
-            </li>
-            <li>
-              <a id="projectsNav" class="close" href="#projects">Projetos</a>
-            </li>
-            <li>
-              <a id="knowledgeNav" class="close" href="#knowledge">Conhecimentos</a>
-            </li>
-            <li>
-              <a id="contactNav" class="close" href="#contact">Fale comigo</a>
-            </li>
-          </ul>
+            <ul>
+                <li>
+                    <a id="aboutNav" class="close" href="#about">Sobre mim</a>
+                </li>
+                <li>
+                    <a id="projectsNav" class="close" href="#projects">Projetos</a>
+                </li>
+                <li>
+                    <a id="knowledgeNav" class="close" href="#knowledge">Conhecimentos</a>
+                </li>
+                <li>
+                    <a id="contactNav" class="close" href="#contact">Fale comigo</a>
+                </li>
+            </ul>
 
-          <ul class="social-links">
-            <li>
-              <a
-                href="https://github.com/sharktank-tech"
-                title="Github"
-                target="_blank"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                >
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10z"
-                    fill="rgba(255,255,255,1)"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/danilo-cavalcante"
-                title="LinkedIn"
-                target="_blank"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                >
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"
-                    fill="rgba(255,255,255,1)"
-                  />
-                </svg>
-              </a>
-            </li>
-          </ul>
+            <ul class="social-links">
+                <li>
+                    <a
+                        href="https://github.com/sharktank-tech"
+                        title="Github"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10z" fill="rgba(255,255,255,1)" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://www.linkedin.com/in/danilo-cavalcante"
+                        title="LinkedIn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z" fill="rgba(255,255,255,1)" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
         </div>
 
-        <button
-          aria-expanded="false"
-          aria-label="Abrir menu"
-          class="open-menu open"
-        >
-          <svg
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M10 20H30"
-              stroke="#00856F"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M10 12H30"
-              stroke="#00856F"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M18 28L30 28"
-              stroke="#00856F"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+        <button aria-expanded="false" aria-label="Abrir menu" class="open-menu open">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
         </button>
 
-        <button
-          aria-expanded="true"
-          aria-label="Fechar menu"
-          class="close-menu close"
-        >
-          <svg
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M30 10L10 30M10 10L30 30"
-              stroke="#FFFAF1"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+        <button aria-expanded="true" aria-label="Fechar menu" class="close-menu close">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
         </button>
-      </div>
-    </nav>
+    </div>
+</nav>
 
+<main>
     <section id="home">
-      <div class="wrapper">
-        <div class="col-a">
-          <header>
-            <h4>Hello world 👋🏾</h4>
-            <h1>Eu sou Danilo</h1>
-          </header>
-          <div class="content">
-            <p class="line typing">Desenvolvedor Web Back-end.</p>
-            <a class="button" href="#contact"> Fale comigo </a>
-          </div>
+        <div class="wrapper">
+            <h1>Olá, meu nome é Danilo!</h1>
+            <p>Sou um desenvolvedor web Back-end</p>
         </div>
-
-        <div class="col-b">
-          <img
-            src="statics/images/notebook.png"
-            alt="Imagem de um notebook."
-            id="notebook-1"
-          />
-          <img
-            src="statics/images/notebook-2.png"
-            alt="Imagem de um notebook com tela quebrada"
-            id="notebook-2"
-          />
-          <img
-            src="statics/images/notebook-2-white.png"
-            alt="Imagem de um notebook"
-            id="notebook-3"
-          />
-        </div>
-      </div>
     </section>
 
     <section id="about">
-      <div class="wrapper">
-        <header>
-          <h2>Sobre mim</h2>
-        </header>
-        <div class="content">
-          <p>
-            Sou um estudante de Engenharia da Computação, e tenho me
-            aperfeiçoado no desenvolvimento web, através de cursos e
-            projetos pessoais. Tenho como objetivo me tornar um
-            Desenvolvedor Full-Stack. Além da programação, sou apaixonado por
-            tecnologia, design e estou sempre buscando aprender mais.
-          </p>
+        <div class="wrapper">
+            <h2>Sobre mim</h2>
+            <p>Me chamo Danilo, sou desenvolvedor web Back-end, estudante de computação e apaixonado por tecnologia.</p>
+            <p>Meu objetivo é criar soluções que ajudem as pessoas e melhoram suas vidas.</p>
         </div>
-      </div>
     </section>
 
     <section id="projects">
-      <div class="wrapper">
-        <header>
-          <h2>Projetos</h2>
-        </header>
-        <div class="projects">
-          <div class="project-card">
-            <div class="content">
-              <h3>Nome do Projeto 1</h3>
-              <p>
-                Descrição breve do projeto, abordando as tecnologias utilizadas e o objetivo do mesmo.
-              </p>
+        <div class="wrapper">
+            <h2>Projetos</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Projeto 1</h3>
+                    <img src="./assets/images/imagem-do-projeto-1.png" alt="Descrição do Projeto 1" />
+                    <p>Descrição do projeto 1. Este projeto foi criado para...</p>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+                </div>
+                <div class="project">
+                    <h3>Projeto 2</h3>
+                    <img src="./assets/images/imagem-do-projeto-2.png" alt="Descrição do Projeto 2" />
+                    <p>Descrição do projeto 2. Este projeto foi desenvolvido com...</p>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+                </div>
             </div>
-            <button class="button">
-              <a href="#" target="_blank">Ver projeto</a>
-            </button>
-          </div>
-          <div class="project-card">
-            <div class="content">
-              <h3>Nome do Projeto 2</h3>
-              <p>
-                Descrição breve do projeto, abordando as tecnologias utilizadas e o objetivo do mesmo.
-              </p>
-            </div>
-            <button class="button">
-              <a href="#" target="_blank">Ver projeto</a>
-            </button>
-          </div>
-          <div class="project-card">
-            <div class="content">
-              <h3>Nome do Projeto 3</h3>
-              <p>
-                Descrição breve do projeto, abordando as tecnologias utilizadas e o objetivo do mesmo.
-              </p>
-            </div>
-            <button class="button">
-              <a href="#" target="_blank">Ver projeto</a>
-            </button>
-          </div>
         </div>
-      </div>
     </section>
 
     <section id="knowledge">
-      <div class="wrapper">
-        <header>
-          <h2>Conhecimentos</h2>
-        </header>
-        <div class="content">
-          <h3>HTML, CSS e JavaScript</h3>
-          <p>
-            Estou sempre aprimorando minhas habilidades em HTML, CSS e JavaScript, utilizando-os em projetos práticos.
-          </p>
-          <h3>Backend</h3>
-          <p>
-            Tenho experiência em desenvolvimento Backend com Node.js e Express, além de bancos de dados como MongoDB e MySQL.
-          </p>
-          <h3>Frameworks</h3>
-          <p>
-            Estou aprendendo frameworks como React e Vue.js, buscando criar interfaces interativas e dinâmicas.
-          </p>
+        <div class="wrapper">
+            <h2>Conhecimentos</h2>
+            <p>Algumas das tecnologias que domino:</p>
+            <ul>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>React</li>
+                <li>Express</li>
+                <li>SQL</li>
+                <li>HTML & CSS</li>
+            </ul>
         </div>
-      </div>
     </section>
 
     <section id="contact">
-      <div class="wrapper">
-        <header>
-          <h2>Fale comigo</h2>
-        </header>
-        <div class="content">
-          <form action="#" method="POST">
-            <div class="form-group">
-              <label for="name">Nome:</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">E-mail:</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Mensagem:</label>
-              <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit" class="button">Enviar</button>
-          </form>
-        </div>
-      </div>
-    </section>
+        <div class="wrapper">
+            <h2>Fale comigo</h2>
+            <form method="post" action="#" novalidate>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required />
 
-    <footer>
-      <div class="wrapper">
-        <p>&copy; 2024 Danilo Cavalcante. Todos os direitos reservados.</p>
-      </div>
-    </footer>
-  </body>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="wrapper">
+        <p>Desenvolvido por Danilo Cavalcante &copy; 2024. Todos os direitos reservados.</p>
+    </div>
+</footer>
+</body>
 </html>
