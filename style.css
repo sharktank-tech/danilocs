@@ -44,10 +44,11 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte */
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 10px; /* Margem reduzida para melhor uso do espaço */
 }
 
 nav a {
@@ -93,8 +94,8 @@ nav a:hover {
 }
 
 .carousel-item {
-    min-width: 160px;
-    margin: 0 10px;
+    min-width: 140px; /* Diminuído para melhor visualização em telas pequenas */
+    margin: 0 5px; /* Margem reduzida */
     padding: 20px;
     background: #ffffff;
     border-radius: 10px;
@@ -120,9 +121,9 @@ nav a:hover {
     border: none;
     padding: 10px 15px;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* Tamanho da fonte reduzido para melhor ajuste */
     border-radius: 5px;
-    margin: 0 10px; /* Espaçamento entre os botões */
+    margin: 0 5px; /* Margem reduzida */
     transition: background-color 0.3s;
 }
 
@@ -144,8 +145,8 @@ nav a:hover {
 }
 
 .project-card {
-    min-width: 250px;
-    margin: 0 15px;
+    min-width: 200px; /* Diminuído para melhor visualização em telas pequenas */
+    margin: 0 10px; /* Margem reduzida */
     padding: 20px;
     background: white;
     border-radius: 10px;
@@ -184,7 +185,7 @@ form {
     display: flex;
     flex-direction: column;
     width: 90%;
-    max-width: 500px;
+    max-width: 400px; /* Diminuído para melhor visualização em telas pequenas */
     margin: 0 auto;
 }
 
@@ -256,7 +257,7 @@ footer {
     }
 
     .carousel-item, .project-card {
-        min-width: 100px;
+        min-width: 140px; /* Diminuído para melhor visualização em telas pequenas */
     }
 
     #prev, #next {
@@ -275,5 +276,13 @@ footer {
 
     nav ul li {
         margin: 5px 0;
+    }
+
+    .project-card {
+        min-width: 80%; /* Aumenta a largura dos cards para ocupar mais espaço */
+    }
+
+    form {
+        max-width: 90%; /* Aumenta a largura do formulário em telas pequenas */
     }
 }
