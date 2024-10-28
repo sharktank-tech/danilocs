@@ -1,9 +1,13 @@
+// Alternar Modo Escuro
 document.getElementById('dark-mode-toggle').onclick = function() {
     document.body.classList.toggle('dark-mode');
 };
 
 const carousel = document.getElementById('skills-carousel');
 let position = 0;
+const itemCount = carousel.children.length; // Total de itens
+const itemWidth = 160; // Largura dos itens (ajuste conforme necessário)
+const totalWidth = itemCount * itemWidth; // Largura total do carrossel
 
 // Clona os elementos do carrossel para criar um efeito infinito
 const cloneItems = () => {
@@ -14,16 +18,25 @@ const cloneItems = () => {
     });
 };
 
-cloneItems(); // Clona os itens ao iniciar
-
 // Atualiza a posição do carrossel
 function moveCarousel() {
-    position -= 100; // Move 100% para a esquerda
-    if (position <= -((carousel.children.length / 2) * 100)) {
-        position = 0; // Reinicia a posição
+    position -= itemWidth; // Move 160px para a esquerda
+    if (position <= -(totalWidth / 2)) {
+        position = 0; // Reinicia a posição ao final da lista
     }
-    carousel.style.transform = `translateX(${position}%)`;
+    carousel.style.transform = `translateX(${position}px)`;
 }
+
+// Botões de Navegação
+document.getElementById('prev').onclick = () => {
+    position += itemWidth; // Move 160px para a direita
+    if (position > 0) {
+        position = -((itemCount / 2) * itemWidth); // Se estiver no início, vai para a metade dos clones
+    }
+    carousel.style.transform = `translateX(${position}px)`;
+};
+
+document.getElementById('next').onclick = moveCarousel;
 
 // Move o carrossel a cada 3 segundos
 setInterval(moveCarousel, 3000);
@@ -57,9 +70,9 @@ carousel.addEventListener('mousemove', (e) => {
 
 // Form Submission
 document.getElementById('contact-form').onsubmit = function(e) {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault(); // Prevenir envio padrão do formulário
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     document.getElementById('notification').innerText = `Obrigado, ${name}! Você será contatado em ${email}.`;
-    e.target.reset(); // Reset form fields
+    e.target.reset(); // Reinicia os campos do formulário
 };
