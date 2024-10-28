@@ -18,11 +18,16 @@ const cloneItems = () => {
     });
 };
 
+// Inicializa o carrossel clonando os itens
+cloneItems();
+const clonedItemCount = carousel.children.length; // Conta após a clonagem
+const clonedTotalWidth = clonedItemCount * itemWidth; // Largura total após clonagem
+
 // Atualiza a posição do carrossel
 function moveCarousel() {
     position -= itemWidth; // Move 160px para a esquerda
-    if (position <= -(totalWidth / 2)) {
-        position = 0; // Reinicia a posição ao final da lista
+    if (position <= -clonedTotalWidth / 2) {
+        position = -clonedTotalWidth / 4; // Move a posição para o meio da nova lista de itens
     }
     carousel.style.transform = `translateX(${position}px)`;
 }
@@ -31,7 +36,7 @@ function moveCarousel() {
 document.getElementById('prev').onclick = () => {
     position += itemWidth; // Move 160px para a direita
     if (position > 0) {
-        position = -((itemCount / 2) * itemWidth); // Se estiver no início, vai para a metade dos clones
+        position = -((clonedItemCount / 2) * itemWidth); // Se estiver no início, vai para a metade dos clones
     }
     carousel.style.transform = `translateX(${position}px)`;
 };
