@@ -5,15 +5,55 @@ document.getElementById('dark-mode-toggle').onclick = function() {
 const carousel = document.getElementById('skills-carousel');
 let position = 0;
 
+// Clona os elementos do carrossel para criar um efeito infinito
+const cloneItems = () => {
+    const items = Array.from(carousel.children);
+    items.forEach(item => {
+        const clone = item.cloneNode(true);
+        carousel.appendChild(clone); // Adiciona os clones ao final
+    });
+};
+
+cloneItems(); // Clona os itens ao iniciar
+
+// Atualiza a posição do carrossel
 function moveCarousel() {
-    position -= 100; // move 100% to the left
-    if (position < -((carousel.children.length - 1) * 100)) {
-        position = 0; // reset position
+    position -= 100; // Move 100% para a esquerda
+    if (position <= -((carousel.children.length / 2) * 100)) {
+        position = 0; // Reinicia a posição
     }
     carousel.style.transform = `translateX(${position}%)`;
 }
 
-setInterval(moveCarousel, 3000); // Move every 3 seconds
+// Move o carrossel a cada 3 segundos
+setInterval(moveCarousel, 3000);
+
+// Função para movimento click+arrasta
+let isDown = false;
+let startX;
+let scrollLeft;
+
+carousel.addEventListener('mousedown', (e) => {
+    isDown = true;
+    startX = e.pageX - carousel.offsetLeft;
+    scrollLeft = carousel.scrollLeft;
+});
+
+carousel.addEventListener('mouseleave', () => {
+    isDown = false;
+});
+
+carousel.addEventListener('mouseup', () => {
+    isDown = false;
+});
+
+carousel.addEventListener('mousemove', (e) => {
+    if (!isDown) return; // Se não estiver pressionado, não faz nada
+    e.preventDefault(); // Previne o comportamento padrão
+    const x = e.pageX - carousel.offsetLeft;
+    const walk = (x - startX) * 2; // O número 2 ajusta a sensibilidade
+    carousel.scrollLeft = scrollLeft - walk;
+});
 
 // Form Submission
 document.getElementById('contact-form').onsubmit = function(e) {
