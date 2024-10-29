@@ -47,7 +47,7 @@ function projetos(section) {
             <p>HTML - CSS - JS - Flask - SQLite - Python</p>
           </div>
           <div class="card">
-            <h3>Desafio 21 dias de código</h3>
+            <h3>Bootcamp Back-end</h3>
             <div class="img-wrapper">
               <img
                 src="statics/images/projects/vivo-bootcamp.jpeg"
@@ -218,7 +218,7 @@ function projetos(section) {
                     />
                   </svg>
                 </a>
-                <a href="https://lucyanovidio.vercel.app" target="_blank" title="Ver Projeto">
+                <a href="https://danilocavalcantesilva.com.br/" target="_blank" title="Ver Projeto">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
