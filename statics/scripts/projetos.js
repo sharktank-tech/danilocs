@@ -8,7 +8,7 @@ function projetos(section) {
             <h3>Ponto eletrônico</h3>
             <div class="img-wrapper">
               <img
-                src="./assets/images/projects/orange-evolution.gif"
+                src="statics/images/projects/desafios/ponto_eletronico.jpeg"
                 alt="Imagem do projeto Ponto eletronico."
               />
               <div class="buttons">
