@@ -89,9 +89,9 @@ function projetos(section) {
             <p>Python - NoSQL - TDD - GIT - Github - Machine Learning</p>
           </div>
           <div class="card">
-            <h3>E-comerce - Links</h3>
+            <h3>E-comerce</h3>
             <div class="img-wrapper">
-              <img src="./assets/images/projects/roberto-links.gif" alt="Imagem do projeto." />
+              <img src="statics/images/projects/e-comerce.jpeg" alt="Imagem do projeto." />
               <div class="buttons">
                 <a href="https://github.com/Codeemserie/e-comerce" target="_blank" title="Repositório no Github">
                   <svg
@@ -122,8 +122,8 @@ function projetos(section) {
                 </a>
               </div>
             </div>
-            <p>Páginas de links desenvolvida para cliente.</p>
-            <p>HTML - CSS - JS</p>
+            <p>Loja de E-comerce com todas as funcionalidades.</p>
+            <p>HTML - CSS - JS - Python - Flask - SQLite</p>
           </div>
           <div class="card">
             <h3>Nutricionista Roberto - Página de consulta</h3>
