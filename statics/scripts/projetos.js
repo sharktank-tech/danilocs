@@ -5,14 +5,14 @@ function projetos(section) {
       <div class="content">
         <div class="cards">
           <div class="card">
-            <h3>Orange Evolution</h3>
+            <h3>Ponto eletrônico</h3>
             <div class="img-wrapper">
               <img
                 src="./assets/images/projects/orange-evolution.gif"
-                alt="GIF do projeto Orange Evolution."
+                alt="Imagem do projeto Ponto eletronico."
               />
               <div class="buttons">
-                <a href="https://github.com/squad-30/OrangeEvolution-Squad30" target="_blank" title="Repositório no Github">
+                <a href="https://github.com/sharktank-tech/Ponto-eletronico" target="_blank" title="Repositório no Github">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -42,16 +42,16 @@ function projetos(section) {
               </div>
             </div>
             <p>
-              Plataforma de estudos desenvolvida na Hackathon do Programa de Formação 4 da FCamara.
+              Plataforma para controle de ponto eletrônico.
             </p>
-            <p>HTML - CSS - JS - NodeJS - Express - SQLite</p>
+            <p>HTML - CSS - JS - Flask - SQLite - Python</p>
           </div>
           <div class="card">
             <h3>Desafio 21 dias de código</h3>
             <div class="img-wrapper">
               <img
-                src="./assets/images/projects/desafio-de-codigo.jpg"
-                alt="Imagem tema do projeto de desafio de código."
+                src="statics/images/projects/vivo-bootcamp.jpeg"
+                alt="Imagem tema do bootcamp."
               />
               <div class="buttons">
                 <a href="https://github.com/lucyanovidio/desafio-21-dias-codigo-rocketseat" target="_blank" title="Repositório no Github">
@@ -84,9 +84,9 @@ function projetos(section) {
               </div>
             </div>
             <p>
-              Desafio promovido pela Rocketseat com 21 projetos diferentes.
+              Bootcamp Vivo - Python AI Backend Developer.
             </p>
-            <p>HTML - CSS - JS</p>
+            <p>Python - NoSQL - TDD - GIT - Github - Machine Learning</p>
           </div>
           <div class="card">
             <h3>Nutricionista Roberto - Links</h3>
