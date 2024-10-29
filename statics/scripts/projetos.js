@@ -89,11 +89,11 @@ function projetos(section) {
             <p>Python - NoSQL - TDD - GIT - Github - Machine Learning</p>
           </div>
           <div class="card">
-            <h3>Nutricionista Roberto - Links</h3>
+            <h3>E-comerce - Links</h3>
             <div class="img-wrapper">
               <img src="./assets/images/projects/roberto-links.gif" alt="Imagem do projeto." />
               <div class="buttons">
-                <a href="https://github.com/lucyanovidio/robertoovidionutri-bio" target="_blank" title="Repositório no Github">
+                <a href="https://github.com/Codeemserie/e-comerce" target="_blank" title="Repositório no Github">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
