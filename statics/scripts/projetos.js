@@ -54,7 +54,7 @@ function projetos(section) {
                 alt="Imagem tema do bootcamp."
               />
               <div class="buttons">
-                <a href="https://github.com/lucyanovidio/desafio-21-dias-codigo-rocketseat" target="_blank" title="Repositório no Github">
+                <a href="" target="_blank" title="Repositório no Github">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
