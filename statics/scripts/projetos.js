@@ -93,7 +93,7 @@ function projetos(section) {
             <div class="img-wrapper">
               <img src="statics/images/projects/e-comerce.jpeg" alt="Imagem do projeto." />
               <div class="buttons">
-                <a href="https://github.com/Codeemserie/e-comerce" target="_blank" title="Repositório no Github">
+                <a href="https://danilocavalcantesilva.com.br/imagem_bootcamp.html" target="_blank" title="Repositório no Github">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
