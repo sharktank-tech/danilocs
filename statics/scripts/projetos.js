@@ -47,11 +47,11 @@ function projetos(section) {
             <p>HTML - CSS - JS - Flask - SQLite - Python</p>
           </div>
           <div class="card">
-            <h3>Bootcamp Back-end</h3>
+            <h3>painel de consulta</h3>
             <div class="img-wrapper">
               <img
-                src="statics/images/projects/vivo-bootcamp.jpeg"
-                alt="Imagem tema do bootcamp."
+                src="statics/images/projects/painel"
+                alt="Imagem tema do painel."
               />
               <div class="buttons">
                 <a href="" target="_blank" title="Repositório no Github">
@@ -84,9 +84,9 @@ function projetos(section) {
               </div>
             </div>
             <p>
-              Bootcamp Vivo - Python AI Backend Developer.
+              Painel de buscas.
             </p>
-            <p>Python - NoSQL - TDD - GIT - Github - Machine Learning</p>
+            <p>Python - SQLAlchemy - Flask - GIT - Github - Tailwind CSS</p>
           </div>
           <div class="card">
             <h3>E-comerce</h3>
