@@ -54,7 +54,7 @@ function projetos(section) {
                 alt="Imagem tema do painel."
               />
               <div class="buttons">
-                <a href="" target="_blank" title="Repositório no Github">
+                <a href="https://painel-topaz.vercel.app/" target="_blank" title="Repositório no Github">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -68,7 +68,7 @@ function projetos(section) {
                     />
                   </svg>
                 </a>
-                <a href="#" id="desafio" title="Ver Projetos">
+                <a href="https://painel-topaz.vercel.app/" id="desafio" title="Ver Projetos">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -93,7 +93,7 @@ function projetos(section) {
             <div class="img-wrapper">
               <img src="statics/images/projects/e-comerce.jpeg" alt="Imagem do projeto." />
               <div class="buttons">
-                <a href="https://danilocavalcantesilva.com.br/imagem_bootcamp.html" target="_blank" title="Repositório no Github">
+                <a href="https://danilocavalcantesilva.com.br" target="_blank" title="Repositório no Github">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
