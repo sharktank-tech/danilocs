@@ -50,7 +50,7 @@ function projetos(section) {
             <h3>painel de consulta</h3>
             <div class="img-wrapper">
               <img
-                src="statics/images/projects/painel"
+                src="statics/images/projects/painel.jpeg"
                 alt="Imagem tema do painel."
               />
               <div class="buttons">
