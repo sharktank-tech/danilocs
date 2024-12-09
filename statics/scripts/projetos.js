@@ -54,7 +54,7 @@ function projetos(section) {
                 alt="Imagem tema do painel."
               />
               <div class="buttons">
-                <a href="https://painel-topaz.vercel.app/" target="_blank" title="Repositório no Github">
+                <a href="https://github.com/sharktank-tech/Painel" target="_blank" title="Repositório no Github">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -68,7 +68,7 @@ function projetos(section) {
                     />
                   </svg>
                 </a>
-                <a href="https://github.com/sharktank-tech/Painel" id="desafio" title="Ver Projeto">
+                <a href="https://painel-topaz.vercel.app/" id="desafio" title="Ver Projeto">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
