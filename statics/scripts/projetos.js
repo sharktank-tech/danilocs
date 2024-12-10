@@ -131,7 +131,7 @@ function projetos(section) {
             <div class="img-wrapper">
               <img src="statics/images/projects/portifolio-img.jpeg" alt="Imagem do projeto." />
               <div class="buttons">
-                <a href="https://github.com/sharktank-tech/danilocs" target="_blank" title="Repositório no Github">
+                <a href="https://github.com/sharktank-tech/PolloModas" target="_blank" title="Repositório no Github">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -145,7 +145,7 @@ function projetos(section) {
                     />
                   </svg>
                 </a>
-                <a href="https://danilocavalcantesilva.com.br/" target="_blank" title="Ver Projeto">
+                <a href="https://pollo-modas.vercel.app/" target="_blank" title="Ver Projeto">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -161,8 +161,7 @@ function projetos(section) {
               </div>
             </div>
             <p>
-              O presente site que desenvolvi para apresentar a mim e meus
-              projetos.
+              Site loja de roupas.
             </p>
             <p>HTML - CSS - JS</p>
           </div>
