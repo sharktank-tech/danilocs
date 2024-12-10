@@ -127,7 +127,7 @@ function projetos(section) {
           </div>
       
           <div class="card">
-            <h3>Meu Portifólio</h3>
+            <h3>Pollo Modas</h3>
             <div class="img-wrapper">
               <img src="statics/images/projects/portifolio-img.jpeg" alt="Imagem do projeto." />
               <div class="buttons">
@@ -163,7 +163,7 @@ function projetos(section) {
             <p>
               Site loja de roupas.
             </p>
-            <p>HTML - CSS - JS</p>
+            <p>HTML - Tailwind-CSS - JS - Python-Flask</p>
           </div>
           
           <div class="card">
