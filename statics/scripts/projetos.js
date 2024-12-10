@@ -135,7 +135,7 @@ function projetos(section) {
             <h3>Loja de Roupas</h3>
             <div class="img-wrapper">
               <img
-                src="statics/images/projects/pollomodas.jpeg"
+                src="statics/images/projects/painel.jpeg"
                 alt="Imagem tema do painel."
               />
               <div class="buttons">
