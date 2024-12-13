@@ -68,7 +68,7 @@ function projetos(section) {
                     />
                   </svg>
                 </a>
-                <a href="https://painel-topaz.vercel.app/" id="desafio" title="Ver Projeto">
+                <a href="https://painel-topaz.vercel.app/" id="painel" title="Ver Projeto">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
