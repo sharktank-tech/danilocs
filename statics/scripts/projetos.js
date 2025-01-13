@@ -12,7 +12,7 @@ function projetos(section) {
                 alt="Imagem do projeto Ponto eletronico."
               />
               <div class="buttons">
-                <a href="https://github.com/sharktank-tech/Ponto-eletronico" target="_blank" title="Repositório no Github">
+                <a href="https://github.com/sharktank-tech/e-ponto" target="_blank" title="Repositório no Github">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -26,7 +26,7 @@ function projetos(section) {
                     />
                   </svg>
                 </a>
-                <a href="" target="_blank" title="Ver Projeto">
+                <a href="https://e-ponto-eight.vercel.app/" target="_blank" title="Ver Projeto">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
