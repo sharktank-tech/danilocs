@@ -89,11 +89,11 @@ function projetos(section) {
             <p>Python - SQLAlchemy - Flask - GIT - Github - Tailwind CSS</p>
           </div>
           <div class="card">
-            <h3>E-comerce</h3>
+            <h3>Gerenciador de Tarefas</h3>
             <div class="img-wrapper">
               <img src="statics/images/projects/e-comerce.jpeg" alt="Imagem do projeto." />
               <div class="buttons">
-                <a href="https://danilocavalcantesilva.com.br" target="_blank" title="Repositório no Github">
+                <a href="https://github.com/sharktank-tech/Gerenciador-Tarefas" target="_blank" title="Repositório no Github">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -107,7 +107,7 @@ function projetos(section) {
                     />
                   </svg>
                 </a>
-                <a href="#" target="_blank" title="Ver Projeto">
+                <a href="https://gerenciador-tarefas-beta.vercel.app/" target="_blank" title="Ver Projeto">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
