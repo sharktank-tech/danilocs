@@ -122,7 +122,7 @@ function projetos(section) {
                 </a>
               </div>
             </div>
-            <p>Loja de E-comerce com todas as funcionalidades.</p>
+            <p>Gerenciador de tarefas com todas as funcionalidades de add, editar e excluir, tanbem com envio de relatorio por e-mail.</p>
             <p>HTML - CSS - JS - Python - Flask - SQLite</p>
           </div>
       
