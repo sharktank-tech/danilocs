@@ -91,7 +91,7 @@ function projetos(section) {
           <div class="card">
             <h3>Gerenciador de Tarefas</h3>
             <div class="img-wrapper">
-              <img src="statics/images/projects/e-comerce.jpeg" alt="Imagem do projeto." />
+              <img src="statics/images/projects/gerenciador.png" alt="Imagem do projeto." />
               <div class="buttons">
                 <a href="https://github.com/sharktank-tech/Gerenciador-Tarefas" target="_blank" title="Repositório no Github">
                   <svg
