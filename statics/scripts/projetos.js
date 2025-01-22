@@ -84,7 +84,7 @@ function projetos(section) {
               </div>
             </div>
             <p>
-              Painel de buscas.
+              Painel de buscas de dados.
             </p>
             <p>Python - SQLAlchemy - Flask - GIT - Github - Tailwind CSS</p>
           </div>
