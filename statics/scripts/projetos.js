@@ -44,7 +44,7 @@ function projetos(section) {
             <p>
               Plataforma para controle de ponto eletrônico.
             </p>
-            <p>HTML - CSS - JS - Flask - SQLite - Python</p>
+            <p>HTML - CSS - JS - Flask - PostgreSQL - Python</p>
           </div>
           <div class="card">
             <h3>painel de consulta</h3>
