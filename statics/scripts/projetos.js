@@ -26,7 +26,7 @@ function projetos(section) {
                     />
                   </svg>
                 </a>
-                <a href="https://e-ponto-eight.vercel.app/" target="_blank" title="Ver Projeto">
+                <a href="https://e-ponto-delta.vercel.app" target="_blank" title="Ver Projeto">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
