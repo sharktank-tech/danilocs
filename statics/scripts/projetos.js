@@ -226,7 +226,7 @@ function projetos(section) {
                     />
                   </svg>
                 </a>
-                <a href="/workspaces/danilocs/data_analytics.html" target="_blank" title="Ver Projeto">
+                <a href="/data_analytics.html" target="_blank" title="Ver Projeto">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
