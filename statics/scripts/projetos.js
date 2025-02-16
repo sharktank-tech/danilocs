@@ -242,10 +242,9 @@ function projetos(section) {
               </div>
             </div>
             <p>
-              O presente site que desenvolvi para apresentar a mim e meus
-              projetos.
+              Repositório contém códigos, notebooks e arquivos relacionados a diversos projetos de análise de dados
             </p>
-            <p>HTML - CSS - JS</p>
+            <p>Python - Pandas - Matplotlib - Scikit-learn, XGBoost, Seaborn - Power BI - SQL</p>
           </div>
                    
           <div class="card">
