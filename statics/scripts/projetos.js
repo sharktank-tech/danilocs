@@ -212,7 +212,7 @@ function projetos(section) {
             <div class="img-wrapper">
               <img src="statics/images/projects/portifolio-img.jpeg" alt="Imagem do projeto." />
               <div class="buttons">
-                <a href="https://github.com/sharktank-tech/danilocs" target="_blank" title="Repositório no Github">
+                <a href="https://github.com/sharktank-tech/analise-de-dados-portifolio" target="_blank" title="Repositório no Github">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -226,7 +226,7 @@ function projetos(section) {
                     />
                   </svg>
                 </a>
-                <a href="/data_analytics.html" target="_blank" title="Ver Projeto">
+                <a href="https://analise-de-dados-portifolio.vercel.app/" target="_blank" title="Ver Projeto">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
