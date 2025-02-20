@@ -210,7 +210,7 @@ function projetos(section) {
           <div class="card">
             <h3>Portifólio de Análise de dados</h3>
             <div class="img-wrapper">
-              <img src="statics/images/projects/portifolio-img.jpeg" alt="Imagem do projeto." />
+              <img src="statics/images/projects/portifolio-dados.png" alt="Imagem do projeto." />
               <div class="buttons">
                 <a href="https://github.com/sharktank-tech/analise-de-dados-portifolio" target="_blank" title="Repositório no Github">
                   <svg
