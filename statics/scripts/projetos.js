@@ -127,11 +127,11 @@ function projetos(section) {
           </div>
       
           <div class="card">
-            <h3>Pollo Modas</h3>
+            <h3>Descontai</h3>
             <div class="img-wrapper">
-              <img src="statics/images/projects/pollomodas.jpeg" alt="Imagem do projeto." />
+              <img src="statics/images/projects/descontai-home.png" alt="Imagem do projeto." />
               <div class="buttons">
-                <a href="https://github.com/sharktank-tech/PolloModas" target="_blank" title="Repositório no Github">
+                <a href="https://github.com/sharktank-tech/Descontai" target="_blank" title="Repositório no Github">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -145,7 +145,7 @@ function projetos(section) {
                     />
                   </svg>
                 </a>
-                <a href="https://pollo-modas.vercel.app/" target="_blank" title="Ver Projeto">
+                <a href="https://descontai.app.br/" target="_blank" title="Ver Projeto">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -163,7 +163,7 @@ function projetos(section) {
             <p>
               Site loja de roupas.
             </p>
-            <p>HTML - Tailwind-CSS - JS - Python-Flask</p>
+            <p>HTML - Tailwind-CSS - JS - Python-Flask - PostgreSQL</p>
           </div>
           
           <div class="card">
