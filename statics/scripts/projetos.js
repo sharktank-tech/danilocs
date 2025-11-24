@@ -161,7 +161,7 @@ function projetos(section) {
               </div>
             </div>
             <p>
-              Site loja de roupas.
+              Site de busca de ofertas.
             </p>
             <p>HTML - Tailwind-CSS - JS - Python-Flask - PostgreSQL</p>
           </div>
