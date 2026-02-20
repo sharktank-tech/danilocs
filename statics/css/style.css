@@ -1696,3 +1696,40 @@
       height: 2rem;
     }
   }
+
+  /* ===== MOBILE OPTIMIZATION ===== */
+@media (max-width: 768px) {
+
+  .knowledge-filters {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 0.5rem;
+  }
+
+  .knowledge-filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-btn {
+    flex: 0 0 auto;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .knowledge-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .knowledge-card {
+    padding: 1rem;
+  }
+
+  .knowledge-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .knowledge-card img {
+    width: 40px;
+  }
+}
