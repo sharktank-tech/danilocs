@@ -29,6 +29,34 @@ window.addEventListener("load", function begin() {
   }
 });
 
+// Script para area de Conheimentos
+const filterButtons = document.querySelectorAll(".filter-btn");
+const cards = document.querySelectorAll(".knowledge-card");
+
+filterButtons.forEach(button => {
+  button.addEventListener("click", () => {
+
+    document.querySelector(".filter-btn.active").classList.remove("active");
+    button.classList.add("active");
+
+    const filter = button.getAttribute("data-filter");
+
+    cards.forEach(card => {
+      if (filter === "all") {
+        card.style.display = "block";
+      } else {
+        if (card.classList.contains(filter)) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      }
+    });
+
+  });
+});
+
+
 // Eventos de scroll
 window.addEventListener("scroll", onScroll);
 onScroll(); // Chamada inicial para configurar corretamente a navegação e o botão de voltar ao topo
