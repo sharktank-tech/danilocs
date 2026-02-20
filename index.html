@@ -223,60 +223,77 @@
     </section>
 
     <section id="knowledge">
-      <div class="wrapper">
-        <header>
-          <h2>Conhecimentos</h2>
-        </header>
-        <div class="content">
-          <div class="cards">
-            <div class="card">
-              <img src="statics/images/html.png" alt="Ícone do HTML5." />
-              <h3>HTML5</h3>
-              <p>
-                HTML5 é uma linguagem de marcação de hipertexto, que usamos para
-                marcar os elementos da página e construí-la.
-              </p>
-            </div>
-            <div class="card">
-              <img src="statics/images/projects/python.jpg" alt="Ícone do Python." />
-              <h3>Python</h3>
-              <p>
-                Python é uma linguagem de Programação Orientada a Objeto
-                muito usada para desenvolvimento web, ciência de dados, IA e automação.
-              </p>
-            </div>
-            <div class="card">
-              <img src="statics/images/js.png" alt="Ícone do JavaScript." />
-              <h3>JavaScript</h3>
-              <p>
-                JavaScript é uma linguagem de programação interpretada usada no
-                desenvolvimento web para descrever funcionalidades e
-                comportamentos da página.
-              </p>
-            </div>
-            <div class="card">
-              <img src="statics/images/projects/SQL.png" alt="Ícone do SQL." />
-              <h3>SQL</h3>
-              <p>
-                SQL é uma linguagem de domínio específico
-                desenvolvida para gerenciar dados relacionais
-                em um sistema de gerenciamento de banco de dados.
-              </p>
-            </div>
+  <div class="wrapper">
+    <header>
+      <h2>Conhecimentos</h2>
+    </header>
 
-            <div class="card">
-              <img src="statics/images/projects/analise-de-dados.png" alt="Ícone do SQL." />
-              <h3>Análise de dados</h3>
-              <p>
-                A análise de dados é um processo de inspeção, limpeza,
-                transformação e modelagem de dados com o objetivo de descobrir informações úteis,
-                informar conclusões e apoiar a tomada de decisões.
-              </p>
-            </div>
-          </div>
-        </div>
+    <!-- BOTÕES DE FILTRO -->
+    <div class="knowledge-filters">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="frontend">Front-end</button>
+      <button class="filter-btn" data-filter="backend">Back-end</button>
+      <button class="filter-btn" data-filter="database">Banco de Dados</button>
+      <button class="filter-btn" data-filter="data">Dados</button>
+      <button class="filter-btn" data-filter="infra">Infra</button>
+    </div>
+
+    <!-- GRID -->
+    <div class="knowledge-grid">
+
+      <!-- FRONT-END -->
+      <div class="knowledge-card frontend">
+        <img src="statics/images/html.png" alt="HTML" />
+        <h3>HTML5</h3>
       </div>
-    </section>
+
+      <div class="knowledge-card frontend">
+        <img src="statics/images/js.png" alt="JavaScript" />
+        <h3>JavaScript</h3>
+      </div>
+
+      <!-- BACK-END -->
+      <div class="knowledge-card backend">
+        <img src="statics/images/projects/python.jpg" alt="Python" />
+        <h3>Python</h3>
+      </div>
+
+      <div class="knowledge-card backend">
+        <h3>Flask</h3>
+      </div>
+
+      <!-- DATABASE -->
+      <div class="knowledge-card database">
+        <img src="statics/images/projects/SQL.png" alt="SQL" />
+        <h3>SQL</h3>
+      </div>
+
+      <div class="knowledge-card database">
+        <h3>SQLite</h3>
+      </div>
+
+      <!-- DATA -->
+      <div class="knowledge-card data">
+        <img src="statics/images/projects/analise-de-dados.png" alt="Análise de Dados" />
+        <h3>Análise de Dados</h3>
+      </div>
+
+      <div class="knowledge-card data">
+        <h3>Pandas</h3>
+      </div>
+
+      <!-- INFRA -->
+      <div class="knowledge-card infra">
+        <h3>Linux</h3>
+      </div>
+
+      <div class="knowledge-card infra">
+        <h3>Docker</h3>
+      </div>
+
+    </div>
+  </div>
+</section>
     
 
     <section id="contact">
