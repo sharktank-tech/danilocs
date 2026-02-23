@@ -47,8 +47,8 @@
   
   body.light-mode {
     --secundary-color: rgb(229, 229, 229);
-    --third-color: hwb(0 48% 52% / 0.356);
-    --bg-color: rgb(241, 241, 241);
+    --third-color: hwb(0 0% 100% / 0.356);
+    --bg-color: rgb(2, 2, 2);
 
     --knowledge-title: hsl(0, 0%, 10%);
   
