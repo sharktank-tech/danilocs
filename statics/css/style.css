@@ -1720,7 +1720,7 @@
   }
 
   .knowledge-grid {
-    grid-template-columns: repeat(4, 2fr);
+    grid-template-columns: repeat(6, 2fr);
     gap: 1rem;
   }
 
@@ -1729,7 +1729,7 @@
   }
 
   .knowledge-card h3 {
-    font-size: 11rem;
+    font-size: 0.9rem;
   }
 
   .knowledge-card img {
