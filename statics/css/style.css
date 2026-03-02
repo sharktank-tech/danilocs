@@ -9,7 +9,7 @@
   }
   
   :root {
-    --hue: 240;
+    --hue: 210;
     --primary-color: hsl(var(--hue), 92%, 43%);
     --primary-hover: hsl(var(--hue), 92%, 33%);
     --secundary-color: hsl(0, 0%, 5%);
@@ -1700,39 +1700,3 @@
     }
   }
 
-  /* ===== MOBILE OPTIMIZATION ===== */
-@media (max-width: 768px) {
-
-  .knowledge-filters {
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    padding-bottom: 0.5rem;
-  }
-
-  .knowledge-filters::-webkit-scrollbar {
-    display: none;
-  }
-
-  .filter-btn {
-    flex: 0 0 auto;
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
-  }
-
-  .knowledge-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-
-  .knowledge-card {
-    padding: 1rem;
-  }
-
-  .knowledge-card h3 {
-    font-size: 0.9rem;
-  }
-
-  .knowledge-card img {
-    width: 60px;
-  }
-}
