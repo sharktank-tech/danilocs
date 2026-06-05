@@ -1335,8 +1335,12 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 4rem;
     }
+
+    #projects .card h3 {
+      color: var(--headline);
+    }
   
-    #projects h3 {
+    #projects h3. {
       height: 5rem;
     }
   
