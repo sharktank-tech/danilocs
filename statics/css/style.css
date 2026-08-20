@@ -624,6 +624,15 @@
     margin-top: 3rem;
   }
 
+  #about .social-proof h3 {
+    font-size: 2rem;
+    line-height: 130%;
+
+    color: var(--primary-color);
+
+    margin: 4rem 0 1.6rem;
+  }
+
   #about .social-proof ul {
     display: flex;
     flex-direction: column;
@@ -640,6 +649,42 @@
     font-weight: bold;
 
     background: var(--third-color);
+  }
+
+  #about .social-proof .certificates li {
+    text-align: left;
+    font-weight: 400;
+  }
+
+  #about .social-proof .certificates li strong {
+    display: block;
+
+    color: var(--headline);
+    font-weight: 700;
+    line-height: 130%;
+
+    margin-bottom: 0.4rem;
+  }
+
+  #about .social-proof .certificates li .date {
+    display: inline-block;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+
+    color: var(--primary-color);
+
+    margin-bottom: 0.8rem;
+  }
+
+  #about .social-proof .certificates li p {
+    font-size: 1.4rem;
+    line-height: 150%;
+    font-weight: 400;
+
+    color: var(--paragraph);
   }
 
   #about .social-proof a.button {
