@@ -336,7 +336,7 @@ function projetos(section) {
           <div class="card">
             <h3>API de Pedidos</h3>
             <div class="img-wrapper">
-              <img src="statics/images/projects/desafio-de-codigo.jpg" alt="Print da API de Pedidos." />
+              <img src="statics/images/projects/API-pedidos.png" alt="Print da API de Pedidos." />
               <div class="buttons">
                 <a href="https://github.com/sharktank-tech/API-pedidos" target="_blank" title="Repositório no Github">
                   <svg
