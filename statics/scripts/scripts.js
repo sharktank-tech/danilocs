@@ -12,6 +12,12 @@ const notebook_2 = document.querySelector("#notebook-2");
 const notebook_2_white = document.querySelector("#notebook-2-white");
 const vidro = document.querySelector("#vidro");
 
+// Ano atual dinâmico no rodapé
+const copyrightYear = document.querySelector("#copyright-year");
+if (copyrightYear) {
+  copyrightYear.textContent = new Date().getFullYear();
+}
+
 window.addEventListener("load", function begin() {
   if (projectsSection) {
     projetos(projectsSection);

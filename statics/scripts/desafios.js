@@ -34,7 +34,7 @@ function desafios(section) {
             <h3>Desafio 1</h3>
             <div class="img-wrapper">
               <img
-                src="./assets/images/projects/desafios/1.png"
+                src="statics/images/projects/desafios/1.png"
                 alt="Imagem tema do projeto de desafio de código."
               />
               <div class="buttons">
@@ -81,8 +81,8 @@ function desafios(section) {
             <h3>Desafio 2</h3>
             <div class="img-wrapper">
               <img
-                src="./assets/images/projects/desafios/2.gif"
-                alt="Imagem do projeto."
+                src="statics/images/projects/desafios/2.gif"
+                alt="Print do desafio de código."
               />
               <div class="buttons">
                 <a
@@ -128,7 +128,7 @@ function desafios(section) {
           <div class="card">
             <h3>Desafio 3</h3>
             <div class="img-wrapper">
-              <img src="./assets/images/projects/desafios/3.gif" alt="Imagem do projeto." />
+              <img src="statics/images/projects/desafios/3.gif" alt="Print do desafio de código." />
               <div class="buttons">
                 <a
                   href="https://github.com/lucyanovidio/desafio-21-dias-codigo-rocketseat/tree/main/dia-3"
@@ -173,7 +173,7 @@ function desafios(section) {
           <div class="card">
             <h3>Desafio 4</h3>
             <div class="img-wrapper">
-              <img src="./assets/images/projects/desafios/4.gif" alt="Imagem do projeto." />
+              <img src="statics/images/projects/desafios/4.gif" alt="Print do desafio de código." />
               <div class="buttons">
                 <a
                   href="https://github.com/lucyanovidio/desafio-21-dias-codigo-rocketseat/tree/main/dia-4"
@@ -218,7 +218,7 @@ function desafios(section) {
           <div class="card">
             <h3>Desafio 5</h3>
             <div class="img-wrapper">
-              <img src="./assets/images/projects/desafios/5.gif" alt="Imagem do projeto." />
+              <img src="statics/images/projects/desafios/5.gif" alt="Print do desafio de código." />
               <div class="buttons">
                 <a href="https://github.com/lucyanovidio/desafio-21-dias-codigo-rocketseat/tree/main/dia-5" target="_blank" title="Repositório no Github">
                   <svg
@@ -257,7 +257,7 @@ function desafios(section) {
           <div class="card">
             <h3>Desafio 6</h3>
             <div class="img-wrapper">
-              <img src="./assets/images/projects/desafios/6.png" alt="Imagem do projeto." />
+              <img src="statics/images/projects/desafios/6.png" alt="Print do desafio de código." />
               <div class="buttons">
                 <a href="https://github.com/lucyanovidio/desafio-21-dias-codigo-rocketseat/tree/main/dia-6" target="_blank" title="Repositório no Github">
                   <svg
@@ -296,7 +296,7 @@ function desafios(section) {
           <div class="card">
             <h3>Desafio 7</h3>
             <div class="img-wrapper">
-              <img src="./assets/images/projects/desafios/7.gif" alt="Imagem do projeto." />
+              <img src="statics/images/projects/desafios/7.gif" alt="Print do desafio de código." />
               <div class="buttons">
                 <a href="https://github.com/lucyanovidio/desafio-21-dias-codigo-rocketseat/tree/main/dia-7" target="_blank" title="Repositório no Github">
                   <svg
@@ -335,7 +335,7 @@ function desafios(section) {
           <div class="card">
             <h3>Desafio 8</h3>
             <div class="img-wrapper">
-              <img src="./assets/images/projects/desafios/8.gif" alt="Imagem do projeto." />
+              <img src="statics/images/projects/desafios/8.gif" alt="Print do desafio de código." />
               <div class="buttons">
                 <a href="https://github.com/lucyanovidio/desafio-21-dias-codigo-rocketseat/tree/main/dia-8" target="_blank" title="Repositório no Github">
                   <svg
@@ -374,7 +374,7 @@ function desafios(section) {
           <div class="card">
             <h3>Desafio 9</h3>
             <div class="img-wrapper">
-              <img src="./assets/images/projects/desafios/9.gif" alt="Imagem do projeto." />
+              <img src="statics/images/projects/desafios/9.gif" alt="Print do desafio de código." />
               <div class="buttons">
                 <a href="https://github.com/lucyanovidio/desafio-21-dias-codigo-rocketseat/tree/main/dia-9" target="_blank" title="Repositório no Github">
                   <svg
@@ -413,7 +413,7 @@ function desafios(section) {
           <div class="card">
             <h3>Desafio 10</h3>
             <div class="img-wrapper">
-              <img src="./assets/images/projects/desafios/10.gif" alt="Imagem do projeto." />
+              <img src="statics/images/projects/desafios/10.gif" alt="Print do desafio de código." />
               <div class="buttons">
                 <a href="https://github.com/lucyanovidio/desafio-21-dias-codigo-rocketseat/tree/main/dia-10" target="_blank" title="Repositório no Github">
                   <svg
@@ -452,7 +452,7 @@ function desafios(section) {
           <div class="card">
             <h3>Desafio 11</h3>
             <div class="img-wrapper">
-              <img src="./assets/images/projects/desafios/11.gif" alt="Imagem do projeto." />
+              <img src="statics/images/projects/desafios/11.gif" alt="Print do desafio de código." />
               <div class="buttons">
                 <a href="https://github.com/lucyanovidio/desafio-21-dias-codigo-rocketseat/tree/main/dia-11" target="_blank" title="Repositório no Github">
                   <svg
@@ -491,7 +491,7 @@ function desafios(section) {
           <div class="card">
             <h3>Desafio 12</h3>
             <div class="img-wrapper">
-              <img src="./assets/images/projects/desafios/12.gif" alt="Imagem do projeto." />
+              <img src="statics/images/projects/desafios/12.gif" alt="Print do desafio de código." />
               <div class="buttons">
                 <a href="https://github.com/lucyanovidio/desafio-21-dias-codigo-rocketseat/tree/main/dia-12" target="_blank" title="Repositório no Github">
                   <svg
@@ -530,7 +530,7 @@ function desafios(section) {
           <div class="card">
             <h3>Desafio 13</h3>
             <div class="img-wrapper">
-              <img src="./assets/images/projects/desafios/13.gif" alt="Imagem do projeto." />
+              <img src="statics/images/projects/desafios/13.gif" alt="Print do desafio de código." />
               <div class="buttons">
                 <a href="https://github.com/lucyanovidio/desafio-21-dias-codigo-rocketseat/tree/main/dia-13" target="_blank" title="Repositório no Github">
                   <svg
@@ -569,7 +569,7 @@ function desafios(section) {
           <div class="card">
             <h3>Desafio 14</h3>
             <div class="img-wrapper">
-              <img src="./assets/images/projects/desafios/14.gif" alt="Imagem do projeto." />
+              <img src="statics/images/projects/desafios/14.gif" alt="Print do desafio de código." />
               <div class="buttons">
                 <a href="https://github.com/lucyanovidio/desafio-21-dias-codigo-rocketseat/tree/main/dia-14" target="_blank" title="Repositório no Github">
                   <svg
@@ -608,7 +608,7 @@ function desafios(section) {
           <div class="card">
             <h3>Desafio 15</h3>
             <div class="img-wrapper">
-              <img src="./assets/images/projects/desafios/15.gif" alt="Imagem do projeto." />
+              <img src="statics/images/projects/desafios/15.gif" alt="Print do desafio de código." />
               <div class="buttons">
                 <a href="https://github.com/lucyanovidio/desafio-21-dias-codigo-rocketseat/tree/main/dia-15" target="_blank" title="Repositório no Github">
                   <svg
@@ -647,7 +647,7 @@ function desafios(section) {
           <div class="card">
             <h3>Desafio 16</h3>
             <div class="img-wrapper">
-              <img src="./assets/images/projects/desafios/16.gif" alt="Imagem do projeto." />
+              <img src="statics/images/projects/desafios/16.gif" alt="Print do desafio de código." />
               <div class="buttons">
                 <a href="https://github.com/lucyanovidio/desafio-21-dias-codigo-rocketseat/tree/main/dia-16" target="_blank" title="Repositório no Github">
                   <svg
@@ -686,7 +686,7 @@ function desafios(section) {
           <div class="card">
             <h3>Desafio 17</h3>
             <div class="img-wrapper">
-              <img src="./assets/images/projects/desafios/17.gif" alt="Imagem do projeto." />
+              <img src="statics/images/projects/desafios/17.gif" alt="Print do desafio de código." />
               <div class="buttons">
                 <a href="https://github.com/lucyanovidio/desafio-21-dias-codigo-rocketseat/tree/main/dia-17" target="_blank" title="Repositório no Github">
                   <svg
@@ -725,7 +725,7 @@ function desafios(section) {
           <div class="card">
             <h3>Desafio 18</h3>
             <div class="img-wrapper">
-              <img src="./assets/images/projects/desafios/18.gif" alt="Imagem do projeto." />
+              <img src="statics/images/projects/desafios/18.gif" alt="Print do desafio de código." />
               <div class="buttons">
                 <a href="https://github.com/lucyanovidio/desafio-21-dias-codigo-rocketseat/tree/main/dia-18" target="_blank" title="Repositório no Github">
                   <svg
@@ -764,7 +764,7 @@ function desafios(section) {
           <div class="card">
             <h3>Desafio 19</h3>
             <div class="img-wrapper">
-              <img src="./assets/images/projects/desafios/19.gif" alt="Imagem do projeto." />
+              <img src="statics/images/projects/desafios/19.gif" alt="Print do desafio de código." />
               <div class="buttons">
                 <a href="https://github.com/lucyanovidio/desafio-21-dias-codigo-rocketseat/tree/main/dia-19" target="_blank" title="Repositório no Github">
                   <svg
@@ -803,7 +803,7 @@ function desafios(section) {
           <div class="card">
             <h3>Desafio 20</h3>
             <div class="img-wrapper">
-              <img src="./assets/images/projects/desafios/20.gif" alt="Imagem do projeto." />
+              <img src="statics/images/projects/desafios/20.gif" alt="Print do desafio de código." />
               <div class="buttons">
                 <a href="https://github.com/lucyanovidio/desafio-21-dias-codigo-rocketseat/tree/main/dia-20" target="_blank" title="Repositório no Github">
                   <svg
@@ -842,7 +842,7 @@ function desafios(section) {
           <div class="card">
             <h3>Desafio 21</h3>
             <div class="img-wrapper">
-              <img src="./assets/images/projects/desafios/21.gif" alt="Imagem do projeto." />
+              <img src="statics/images/projects/desafios/21.gif" alt="Print do desafio de código." />
               <div class="buttons">
                 <a href="https://github.com/lucyanovidio/portifolio" target="_blank" title="Repositório no Github">
                   <svg

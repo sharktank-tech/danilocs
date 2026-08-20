@@ -85,6 +85,13 @@
   a {
     text-decoration: none;
   }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 0.3rem solid var(--primary-color);
+    outline-offset: 0.2rem;
+    border-radius: 0.4rem;
+  }
   
   img {
     max-width: 100%;
@@ -445,7 +452,7 @@
   
   #home .line {
     border-right: 0.2rem solid var(--primary-color);
-    white-space: nowrap;
+    white-space: initial;
     overflow: hidden;
   }
   
@@ -459,7 +466,7 @@
       width: 0;
     }
     to {
-      width: 27.5rem;
+      width: 36rem;
     }
   }
   
@@ -604,13 +611,44 @@
     text-align: left;
   }
   
-  #about img {
+#about img {
     width: 38rem;
-  
+
     border-radius: 2rem;
     box-shadow: 0 0 2rem black;
-  
+
     transition: 600ms;
+  }
+
+  #about .social-proof {
+    margin-top: 3rem;
+  }
+
+  #about .social-proof ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    margin-bottom: 3.2rem;
+  }
+
+  #about .social-proof li {
+    padding: 1rem 1.2rem;
+    border-radius: 0.8rem;
+
+    color: var(--paragraph);
+    font-weight: bold;
+
+    background: var(--third-color);
+  }
+
+  #about .social-proof a.button {
+    margin: 0;
+    color: var(--primary-color);
+  }
+
+  #about .social-proof a.button:hover {
+    color: #fff;
   }
   
   /*===== PROJECTS ===============================================*/
@@ -763,7 +801,7 @@
     fill: #fff;
   }
   
-  #projects .card:nth-child(8) svg path:nth-child(2) {
+  #projects .card.placeholder svg path:nth-child(2) {
     fill: var(--paragraph);
   }
   
@@ -1277,6 +1315,10 @@
       margin: 0;
     }
   
+    #home .line {
+      white-space: nowrap;
+    }
+
     #home .wrapper::before {
       width: 40rem;
       height: 40rem;
@@ -1294,7 +1336,7 @@
         width: 0;
       }
       to {
-        width: 38rem;
+        width: 50rem;
       }
     }
   
@@ -1339,11 +1381,7 @@
     #projects .card h3 {
       color: var(--headline);
     }
-  
-    #projects h3. {
-      height: 5rem;
-    }
-  
+
     /*===== KNOWLEDGE =====================================*/
   
     /* FILTROS */
@@ -1510,7 +1548,7 @@
         width: 0;
       }
       to {
-        width: 23.5rem;
+        width: 32rem;
       }
     }
   
@@ -1602,7 +1640,7 @@
         width: 0;
       }
       to {
-        width: 18rem;
+        width: 26rem;
       }
     }
   

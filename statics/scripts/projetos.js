@@ -9,7 +9,7 @@ function projetos(section) {
             <div class="img-wrapper">
               <img
                 src="statics/images/projects/desafios/ponto_eletronico.jpeg"
-                alt="Imagem do projeto Ponto eletronico."
+                alt="Print do projeto Ponto Eletrônico."
               />
               <div class="buttons">
                 <a href="https://github.com/sharktank-tech/e-ponto" target="_blank" title="Repositório no Github">
@@ -42,16 +42,17 @@ function projetos(section) {
               </div>
             </div>
             <p>
-              Plataforma para controle de ponto eletrônico.
+              Plataforma para controle de ponto eletrônico, com registro de
+              jornada e acompanhamento da frequência dos colaboradores.
             </p>
             <p>HTML - CSS - JS - Flask - PostgreSQL - Python</p>
           </div>
           <div class="card">
-            <h3>painel de consulta</h3>
+            <h3>Painel de Consulta</h3>
             <div class="img-wrapper">
               <img
                 src="statics/images/projects/painel.jpeg"
-                alt="Imagem tema do painel."
+                alt="Print do painel de consulta."
               />
               <div class="buttons">
                 <a href="https://github.com/sharktank-tech/Painel" target="_blank" title="Repositório no Github">
@@ -84,14 +85,15 @@ function projetos(section) {
               </div>
             </div>
             <p>
-              Painel de buscas de dados.
+              Painel para busca e consulta de dados, facilitando o acesso rápido
+              a informações cadastradas.
             </p>
             <p>Python - SQLAlchemy - Flask - GIT - Github - Tailwind CSS</p>
           </div>
           <div class="card">
             <h3>Gerenciador de Tarefas</h3>
             <div class="img-wrapper">
-              <img src="statics/images/projects/gerenciador.png" alt="Imagem do projeto." />
+              <img src="statics/images/projects/gerenciador.png" alt="Print do gerenciador de tarefas." />
               <div class="buttons">
                 <a href="https://github.com/sharktank-tech/Gerenciador-Tarefas" target="_blank" title="Repositório no Github">
                   <svg
@@ -122,14 +124,14 @@ function projetos(section) {
                 </a>
               </div>
             </div>
-            <p>Gerenciador de tarefas com todas as funcionalidades de add, editar e excluir, tanbem com envio de relatorio por e-mail.</p>
+            <p>Gerenciador de tarefas com criar, editar e excluir itens e envio de relatório por e-mail.</p>
             <p>HTML - CSS - JS - Python - Flask - SQLite</p>
           </div>
       
           <div class="card">
             <h3>Descontai</h3>
             <div class="img-wrapper">
-              <img src="statics/images/projects/descontai-home.png" alt="Imagem do projeto." />
+              <img src="statics/images/projects/descontai-home.png" alt="Print da home do site Descontai." />
               <div class="buttons">
                 <a href="https://github.com/sharktank-tech/Descontai" target="_blank" title="Repositório no Github">
                   <svg
@@ -161,15 +163,16 @@ function projetos(section) {
               </div>
             </div>
             <p>
-              Site de busca de ofertas.
+              Site de busca de ofertas e descontos para encontrar as melhores
+              promoções.
             </p>
             <p>HTML - Tailwind-CSS - JS - Python-Flask - PostgreSQL</p>
           </div>
           
           <div class="card">
-            <h3>Meu Portifólio</h3>
+            <h3>Meu Portfólio</h3>
             <div class="img-wrapper">
-              <img src="statics/images/projects/portifolio-img.jpeg" alt="Imagem do projeto." />
+              <img src="statics/images/projects/portfolio-img.jpeg" alt="Print deste portfólio." />
               <div class="buttons">
                 <a href="https://github.com/sharktank-tech/danilocs" target="_blank" title="Repositório no Github">
                   <svg
@@ -201,16 +204,15 @@ function projetos(section) {
               </div>
             </div>
             <p>
-              O presente site que desenvolvi para apresentar a mim e meus
-              projetos.
+              O site atual, desenvolvido para apresentar Danilo e seus projetos.
             </p>
             <p>HTML - CSS - JS</p>
           </div>
 
           <div class="card">
-            <h3>Portifólio de Análise de dados</h3>
+            <h3>Portfólio de Análise de dados</h3>
             <div class="img-wrapper">
-              <img src="statics/images/projects/portifolio-dados.png" alt="Imagem do projeto." />
+              <img src="statics/images/projects/portfolio-dados.png" alt="Print do portfólio de análise de dados." />
               <div class="buttons">
                 <a href="https://github.com/sharktank-tech/analise-de-dados-portifolio" target="_blank" title="Repositório no Github">
                   <svg
@@ -242,7 +244,8 @@ function projetos(section) {
               </div>
             </div>
             <p>
-              Repositório contém códigos, notebooks e arquivos relacionados a diversos projetos de análise de dados
+              Coleção de análises de dados com notebooks que exploram e
+              transformam dados em informações úteis.
             </p>
             <p>Python - Pandas - Matplotlib - Scikit-learn, XGBoost, Seaborn - Power BI - SQL</p>
           </div>
@@ -250,7 +253,7 @@ function projetos(section) {
            <div class="card">
             <h3>Divine Closet</h3>
             <div class="img-wrapper">
-              <img src="statics/images/projects/divinecloset.jpeg" alt="Imagem do projeto." />
+              <img src="statics/images/projects/divinecloset.jpeg" alt="Print do site Divine Closet." />
               <div class="buttons">
                 <a href="https://github.com/sharktank-tech/DivineCloset" target="_blank" title="Repositório no Github">
                   <svg
@@ -282,7 +285,8 @@ function projetos(section) {
               </div>
             </div>
             <p>
-              Uma loja de roupas com design moderno e elegante focada na conversão de novos clientes.
+              Loja virtual de roupas com design moderno e elegante focada na
+              conversão de novos clientes.
             </p>
             <p>HTML - CSS - JS - Python</p>
           </div>
@@ -290,7 +294,7 @@ function projetos(section) {
           <div class="card">
             <h3>Pollomodas</h3>
             <div class="img-wrapper">
-              <img src="statics/images/projects/descontai-home.png" alt="Imagem do projeto." />
+              <img src="statics/images/projects/pollomodas.jpeg" alt="Print do site Pollo Modas." />
               <div class="buttons">
                 <a href="https://github.com/sharktank-tech/PolloModas" target="_blank" title="Repositório no Github">
                   <svg
@@ -322,12 +326,56 @@ function projetos(section) {
               </div>
             </div>
             <p>
-              Site da loja de roupas Pollo modas.
+              Site institucional da loja de roupas Pollo Modas, com catálogo de
+              produtos e informações da marca.
             </p>
             <p>HTML - Tailwind-CSS - JS - Python-Flask - PostgreSQL</p>
           </div>       
                    
+          <!-- TODO: substituir por print real do projeto API de Pedidos -->
           <div class="card">
+            <h3>API de Pedidos</h3>
+            <div class="img-wrapper">
+              <img src="statics/images/projects/desafio-de-codigo.jpg" alt="Print da API de Pedidos." />
+              <div class="buttons">
+                <a href="https://github.com/sharktank-tech/API-pedidos" target="_blank" title="Repositório no Github">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10z"
+                      fill="rgba(255,255,255,1)"
+                    />
+                  </svg>
+                </a>
+                <!-- TODO: adicionar link de deploy da API de Pedidos, se existir -->
+                <a href="https://github.com/sharktank-tech/API-pedidos" target="_blank" title="Ver Projeto">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      d="M12 3c5.392 0 9.878 3.88 10.819 9-.94 5.12-5.427 9-10.819 9-5.392 0-9.878-3.88-10.819-9C2.121 6.88 6.608 3 12 3zm0 16a9.005 9.005 0 0 0 8.777-7 9.005 9.005 0 0 0-17.554 0A9.005 9.005 0 0 0 12 19zm0-2.5a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9zm0-2a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <p>
+              API REST de gestão de pedidos com cadastro de clientes,
+              autenticação JWT e integração com WhatsApp.
+            </p>
+            <p>Python - FastAPI - PostgreSQL - Redis - Docker</p>
+          </div>
+
+          <div class="card placeholder">
             <h3>Em breve...</h3>
             <svg
               xmlns="http://www.w3.org/2000/svg"
