@@ -294,7 +294,7 @@ function projetos(section) {
           <div class="card">
             <h3>Pollomodas</h3>
             <div class="img-wrapper">
-              <img src="statics/images/projects/pollomodas.jpeg" alt="Print do site Pollo Modas." />
+              <img src="statics/images/projects/pollomodas.png" alt="Print do site Pollo Modas." />
               <div class="buttons">
                 <a href="https://github.com/sharktank-tech/PolloModas" target="_blank" title="Repositório no Github">
                   <svg
