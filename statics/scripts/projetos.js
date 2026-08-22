@@ -90,12 +90,13 @@ function projetos(section) {
             </p>
             <p>Python - SQLAlchemy - Flask - GIT - Github - Tailwind CSS</p>
           </div>
+          <!-- TODO: substituir por print real do projeto Mental Peak -->
           <div class="card">
-            <h3>Gerenciador de Tarefas</h3>
+            <h3>Mental Peak</h3>
             <div class="img-wrapper">
-              <img src="statics/images/projects/gerenciador.png" alt="Print do gerenciador de tarefas." />
+              <img src="statics/images/projects/desafio-de-codigo.jpg" alt="Print do projeto Mental Peak." />
               <div class="buttons">
-                <a href="https://github.com/sharktank-tech/Gerenciador-Tarefas" target="_blank" title="Repositório no Github">
+                <a href="https://github.com/sharktank-tech/MentalHealth" target="_blank" title="Repositório no Github">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -109,7 +110,7 @@ function projetos(section) {
                     />
                   </svg>
                 </a>
-                <a href="https://gerenciador-tarefas-beta.vercel.app/" target="_blank" title="Ver Projeto">
+                <a href="https://mental-health-two-fawn.vercel.app" target="_blank" title="Ver Projeto">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -124,8 +125,12 @@ function projetos(section) {
                 </a>
               </div>
             </div>
-            <p>Gerenciador de tarefas com criar, editar e excluir itens e envio de relatório por e-mail.</p>
-            <p>HTML - CSS - JS - Python - Flask - SQLite</p>
+            <p>
+              Plataforma de treino cognitivo para melhorar a performance mental,
+              com dashboard, rotina diária e treinos de respiração, cálculo,
+              memória e criatividade.
+            </p>
+            <p>HTML - CSS - JS - Python - Flask - PostgreSQL - Flask-Mail</p>
           </div>
       
           <div class="card">
