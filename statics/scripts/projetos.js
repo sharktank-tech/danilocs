@@ -90,11 +90,10 @@ function projetos(section) {
             </p>
             <p>Python - SQLAlchemy - Flask - GIT - Github - Tailwind CSS</p>
           </div>
-          <!-- TODO: substituir por print real do projeto Mental Peak -->
           <div class="card">
             <h3>Mental Peak</h3>
             <div class="img-wrapper">
-              <img src="statics/images/projects/desafio-de-codigo.jpg" alt="Print do projeto Mental Peak." />
+              <img src="statics/images/projects/mental-health.png" alt="Print do projeto Mental Peak." />
               <div class="buttons">
                 <a href="https://github.com/sharktank-tech/MentalHealth" target="_blank" title="Repositório no Github">
                   <svg
