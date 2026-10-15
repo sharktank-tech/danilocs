@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /imagem_bootcamp.html
+Disallow: /slides/
+Disallow: /.idea/
+
+Sitemap: https://danilocavalcantesilva.com.br/sitemap.xml
